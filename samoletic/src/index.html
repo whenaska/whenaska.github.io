@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Самолётик</title>
+</head>
+<body>
+<!--nav-bar-->
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand text-uppercase" href="#">Самолётик</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon navbar-dark"></span>
+    </button>      
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="home" href="#" >samoletic@mail.ru</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#">+7 (950) 950 95-09</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#">Москва</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div> 
+<!--first page-->
+<div class="section first-page">
+  <div class="container">
+    <!--photo-->
+    <div class="row">
+      <div class="col-12">
+        <div class="photo">
+          <img src="img/airplane.jpg" class="img-fluid" alt="airplane">
+        </div>
+      </div>
+    </div>
+    <!--header-->
+    <div class="row">
+      <div class="col-12">
+          <h1 class="section-header text-center">Путешествуйте вместе с нами!</h1>
+      </div>
+    </div>
+    <!--forms for flight-->
+    <form action="#" class="row g-5 text-center forms-for-flight">
+      <div class="offset-lg-1 col-lg-2">
+        <h2 class="text-for-forms">Откуда</h2>
+        <input type="text" class="form-flight form-control" placeholder="Город">
+      </div>
+      <div class="col-lg-2">
+        <h2 class="text-for-forms">Куда</h2>
+        <input type="text" class="form-flight form-control" placeholder="Город">
+      </div>
+      <div class="col-lg-2">
+        <h2 class="text-for-forms">Когда</h2>
+        <input type="text" class="form-flight form-control" placeholder="Дата выезда">
+      </div>
+      <div class="col-lg-2">
+        <h2 class="text-for-forms">Обратно</h2>
+        <input type="text" class="form-flight form-control" placeholder="Дата прилёта">
+      </div>
+      <div class="col-lg-2">
+        <h2 class="text-for-forms">Пассажиры</h2>
+        <input type="text" class="form-flight form-control" placeholder="Количество">
+      </div>
+    </form>
+  </div>
+</div>
+<!--second page-->
+<div class="section second-page">
+  <div class="container">
+    <!--photo with text-->
+    <div class="places-for-flight">
+      <div class="row text-center">
+        <div class="col-lg-5">
+          <p class="text-places">Варшава</p>
+          <img src="img/Varshava.jpg" class="img-for-flight img-fluid rounded" alt="Varshava">
+        </div>
+        <div class="col-lg-5 offset-lg-2">
+          <p class="text-places">Берлин</p>
+          <img src="img/Berlin.jpg" class="img-for-flight img-fluid rounded" alt="Berlin">
+        </div>
+        <div class="col-lg-5">
+          <p class="text-places">Байкал</p>
+          <img src="img/Baikal.jpg" class="img-for-flight img-fluid rounded" alt="Baikal">
+        </div>
+        <div class="col-lg-5 offset-lg-2">
+          <p class="text-places">Анкара</p>
+          <img src="img/ankara.jpg" class="img-for-flight img-fluid rounded" alt="Ankara">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
