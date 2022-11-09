@@ -28,7 +28,10 @@ body {
   color: #ffffff;
   padding: 1rem 3rem;
   font-size: 1.2rem;
+  border-radius: 10px;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .btn:hover {
   background-color: #fcb303;
@@ -41,7 +44,8 @@ body {
 /*first page*/
 .main {
   padding: 2rem 0;
-  background: #ffffff url(../img/bg-promo.jpg) center center no-repeat;
+  top: 0px;
+  background: #ffffff url(../img/bg-promo.jpg) center top no-repeat;
 }
 .main .phone-link {
   display: inline-block;
@@ -57,6 +61,7 @@ body {
   margin-top: 10rem;
 }
 .main-title h1 {
+  margin-top: 0px;
   margin-bottom: 5rem;
   line-height: 1.45;
   font-family: 'ProximaNova_bold', sans-serif;
@@ -110,7 +115,7 @@ body {
   margin: 2rem 0;
   padding: 1.5rem;
   width: 100%;
-  border: 1px solid #dddddd d;
+  border: 1px solid #dddddd;
 }
 .main-form-btn {
   display: block;
@@ -122,4 +127,26 @@ body {
   display: block;
   margin-top: 1.5rem;
   font-size: 1.3rem;
+}
+@media screen and (max-width: 991px) {
+  .phone-link {
+    font-size: 1.5rem;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .main {
+    background: #ffffff url(../img/texture-wall.jpg) center top no-repeat;
+  }
+  .main-form {
+    border: 3px solid #dddddd;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main-title h1 {
+    font-size: 3.5rem;
+  }
+  .logo {
+    text-align: center;
+  }
 }
