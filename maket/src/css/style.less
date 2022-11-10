@@ -36,6 +36,7 @@
 @btn-color: #fcb303;
 @btn-color-hover: #e6a50e;
 @icons-color: #46b814;
+@dark-background-color: #286c0a;
 @text-color: #1a1820;
 @wrong-color: #ff0000; 
 @bg-light-color: #f5f5f5;
@@ -80,7 +81,6 @@ h1 {
     padding: 2rem 0;
     top: 0px;
     background: @light url(../img/bg-promo.jpg) center top no-repeat;
-    
     .phone-link {
     display: inline-block;
     .bold();
@@ -181,30 +181,58 @@ h1 {
         margin-bottom: 30px;
     }
     
-    h2 {
+    .header-benefit {
         .bold();
     }
 
-    p {
+    .header-description {
         margin-bottom: 80px;
         font-size: 1.5rem;
     }
 }
 /*media запросы*/
 @media screen and (max-width:991px) {
-    .phone-link {
-        font-size: 1.5rem;
+    .logo {
+        margin-bottom: 30px;
     }
-    .main-title {
-      text-align: center;
+    .phone-link {
+        font-size: 3rem !important;
+        margin-bottom: 30px;
+    }
+    .btn {
+        font-size: 2rem;
+        width: 100%;
     }
     .main {
         background: @light url(../img/texture-wall.jpg) center top no-repeat;
     }
+    .main-title {
+      text-align: center;
+    }
+    .sub-title {
+        font-size: 3rem !important;
+    }
+    span {
+        font-size: 2.5rem !important;
+    }
     .main-form{
         border: 3px solid @border-input;
     }
-    
+    .main-form-header {
+        font-size: 2.5rem !important;
+    }
+    label {
+        font-size: 2rem !important;
+    }
+    small {
+        font-size: 1.7rem !important;
+    }
+    .header-benefit {
+        font-size: 2.5rem !important;
+    }
+    .header-description {
+        font-size: 2.1rem !important;
+    }
   }
   @media screen and (max-width:575px) {
     h1 {

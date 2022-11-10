@@ -140,26 +140,55 @@ h1 {
 .benefit img {
   margin-bottom: 30px;
 }
-.benefit h2 {
+.benefit .header-benefit {
   font-family: 'ProximaNova_bold', sans-serif;
 }
-.benefit p {
+.benefit .header-description {
   margin-bottom: 80px;
   font-size: 1.5rem;
 }
 /*media запросы*/
 @media screen and (max-width: 991px) {
-  .phone-link {
-    font-size: 1.5rem;
+  .logo {
+    margin-bottom: 30px;
   }
-  .main-title {
-    text-align: center;
+  .phone-link {
+    font-size: 3rem !important;
+    margin-bottom: 30px;
+  }
+  .btn {
+    font-size: 2rem;
+    width: 100%;
   }
   .main {
     background: #ffffff url(../img/texture-wall.jpg) center top no-repeat;
   }
+  .main-title {
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 3rem !important;
+  }
+  span {
+    font-size: 2.5rem !important;
+  }
   .main-form {
     border: 3px solid #dddddd;
+  }
+  .main-form-header {
+    font-size: 2.5rem !important;
+  }
+  label {
+    font-size: 2rem !important;
+  }
+  small {
+    font-size: 1.7rem !important;
+  }
+  .header-benefit {
+    font-size: 2.5rem !important;
+  }
+  .header-description {
+    font-size: 2.1rem !important;
   }
 }
 @media screen and (max-width: 575px) {
