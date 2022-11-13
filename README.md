@@ -7,4 +7,4 @@
 
 [Штукатурка](https://whenaska.github.io/maket/src/ "Штукатурка")
 
-[Тест](whenaska.github.io/first-js/ "Тест")
+[Тест](https://whenaska.github.io/first-js/ "Тест")
