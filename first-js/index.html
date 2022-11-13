@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Ты гей?</h1>
+        <button class="btn yes" id="Yes" type="submit" onclick="F_check_yes()">Да</button>
+        <button class="btn no" id="No" type="submit" onclick="F_check_no()">Нет</button>
+
+        <div class="popup Popup_yes" id="Popup_yes">
+            <img src="img/happy.jpg" alt="happy">
+            <h2>Ты гей</h2>
+            <button class="btn confirm" onclick="closePopup_yes()">Ок</button>
+        </div>
+
+        <div class="popup Popup_no " id="Popup_no">
+            <img src="img/angry.jpg" alt="angry">
+            <h2>Ты врёшь</h2>
+            <button class="btn confirm" onclick="closePopup_no()">Ок</button>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
