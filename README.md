@@ -6,3 +6,5 @@
 [Самолётик](https://whenaska.github.io/samoletic/src/ "Самолётик")
 
 [Штукатурка](https://whenaska.github.io/maket/src/ "Штукатурка")
+
+[Тест](whenaska.github.io/first-js/ "Тест")
