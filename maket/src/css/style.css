@@ -46,7 +46,6 @@ h1 {
   line-height: 1.45;
   font-family: 'ProximaNova_bold', sans-serif;
   font-size: 4.5rem;
-  text-transform: uppercase;
 }
 .sub-title {
   margin-bottom: 5rem;
@@ -72,6 +71,7 @@ h1 {
   margin-top: 10rem;
 }
 .main-title h1 {
+  text-transform: uppercase;
   margin-bottom: 5rem;
 }
 .main-title span {
@@ -136,7 +136,6 @@ h1 {
 }
 .benefit h1 {
   margin-bottom: 100px;
-  text-transform: none;
 }
 .benefit img {
   margin-bottom: 30px;
@@ -178,6 +177,47 @@ h1 {
 }
 .price .choice-order .btn {
   font-size: 2rem;
+}
+/*fourth page*/
+.review {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #ffffff url(../img/bg-reviews.jpg) center top no-repeat;
+}
+.review .mySwiper {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px #dddddd;
+          box-shadow: 0 0 10px #dddddd;
+}
+.review .mySwiper h2 {
+  margin-bottom: 10px;
+}
+.review .mySwiper p {
+  font-size: 1.7rem;
+}
+.review .mySwiper .photo-and-name p {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  display: inline !important;
+}
+.review .mySwiper .photo-customer {
+  border-radius: 25px;
+}
+.review .mySwiper .review-from-customer {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #46b814;
+}
+.review .mySwiper blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  background-color: #46b814;
+  padding: 10px;
+  color: #ffffff;
 }
 /*media запросы*/
 @media screen and (max-width: 991px) {
@@ -254,6 +294,18 @@ h1 {
   }
   .choice-order .item-list {
     font-size: 3.5rem !important;
+  }
+  /*fourth page*/
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 3.7rem !important;
+  }
+  blockquote {
+    font-size: 3.5rem !important;
+  }
+  .name-customer {
+    font-size: 2.5rem !important;
   }
 }
 @media screen and (max-width: 575px) {
