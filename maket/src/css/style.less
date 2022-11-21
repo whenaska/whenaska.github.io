@@ -77,7 +77,6 @@ body {
 .form {
     padding: 5rem;
     text-align: center;
-    background-color: @light;
 
     &-header {
         margin-bottom: 4rem;
@@ -98,6 +97,7 @@ body {
 
     &-input {
         display: block;
+        font-size: 1.5rem;
         margin: 2rem 0;
         padding: 1.5rem;
         width: 100%;
@@ -174,7 +174,6 @@ body {
     .about-cost {
         display: inline-block;
         padding: 1rem 3rem;
-        
         background-color: @icons-color;
         color: @light;        
     }
@@ -187,6 +186,9 @@ body {
         font-size: 2.2rem;
     }
     
+    .form {
+        background-color: @light;
+    }
     
 }
 
@@ -217,7 +219,6 @@ body {
     .choice-order {
         padding: 30px 10px;
         background-color: @light;
-        border: 10px solid @dark-background-color;
         color: @text-color;
 
         .secondary-title {
@@ -229,9 +230,17 @@ body {
         }
 
         .item-list {
-            list-style-image: url(../img/icon-check.png);
-            list-style-position: inside;
             font-size: 1.5rem;
+            li {
+                list-style-type: none; 
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background: url(../img/icon-check.png) no-repeat center;
+                }
+            }
         }
 
         .price-choice-order-btn {
@@ -276,6 +285,14 @@ body {
             font-style: italic;
         }
     }
+    .reviews-secondary-title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .reviews-header-input {
+        transform: translateX(-50%) translateY(25%);
+    }
+    
 } 
 
 .swiper-button-next::after, .swiper-button-prev::after {
@@ -383,6 +400,9 @@ body {
     }
     .name-customer{
         font-size: 3rem !important;
+    }
+    .reviews-header-input {
+        transform: translateX(-50%) translateY(-20%) !important;
     }
 }
 
