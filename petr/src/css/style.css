@@ -1,0 +1,59 @@
+body {
+  background-color: #9abaed;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.petr {
+  position: absolute;
+  z-index: 99 !important;
+}
+.petr .petr-image {
+  margin-top: 10vw;
+  margin-left: 40vw;
+  width: 15vw;
+  -webkit-animation-duration: 0.07s;
+          animation-duration: 0.07s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.field .field-image {
+  margin-left: -40vw;
+  margin-top: 20vw;
+  width: 200vw;
+  -webkit-animation: 50s infinite linear spin;
+          animation: 50s infinite linear spin;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 991px) {
+  .petr-image {
+    margin-top: 30vh !important;
+    margin-left: 10vh !important;
+    height: 15vh !important;
+    width: 15vh !important;
+  }
+  .field-image {
+    margin-left: -200vh !important;
+    margin-top: 40vh !important;
+    height: 400vh !important;
+    width: 400vh !important;
+  }
+}

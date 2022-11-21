@@ -8,3 +8,5 @@
 [Штукатурка](https://whenaska.github.io/maket/src/ "Штукатурка")
 
 [Тест](https://whenaska.github.io/first-js/ "Тест")
+
+[Поросёнок Пётр](https://whenaska.github.io/petr/src/ "Поросёнок Пётр")
