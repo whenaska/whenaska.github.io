@@ -225,8 +225,10 @@ body {
   font-style: italic;
 }
 .reviews .reviews-secondary-title {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+}
+.reviews .form {
+  padding-top: 20px !important;
 }
 .reviews .reviews-header-input {
   -webkit-transform: translateX(-50%) translateY(25%);
@@ -237,6 +239,18 @@ body {
   background-color: #46b814;
   padding: 10px;
   color: #ffffff;
+}
+/*fifrh page*/
+.scheme-work {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background: #ffffff url(../img/bg-scheme-work.jpg) bottom right no-repeat;
+}
+.scheme-work .scheme-work-primary-sub-title {
+  margin-bottom: 80px;
+}
+.scheme-work .stage-of-work {
+  margin-bottom: 60px;
 }
 /*media запросы*/
 @media screen and (max-width: 991px) {
@@ -322,6 +336,10 @@ body {
   .reviews-header-input {
     -webkit-transform: translateX(-50%) translateY(-20%) !important;
             transform: translateX(-50%) translateY(-20%) !important;
+  }
+  /*fifth page*/
+  .scheme-work {
+    background: none;
   }
 }
 @media screen and (max-width: 575px) {

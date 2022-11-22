@@ -273,7 +273,6 @@ body {
             margin-left: 10px;
             display: inline !important;
         }
-       
         
         .review-from-customer {
             margin-top: 20px;
@@ -285,9 +284,12 @@ body {
             font-style: italic;
         }
     }
+
     .reviews-secondary-title {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+    .form {
+        padding-top: 20px !important;
     }
     .reviews-header-input {
         transform: translateX(-50%) translateY(25%);
@@ -301,6 +303,19 @@ body {
     color: @light;
 }
 
+/*fifrh page*/
+.scheme-work {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background: @light url(../img/bg-scheme-work.jpg) bottom right no-repeat;
+
+    .scheme-work-primary-sub-title {
+        margin-bottom: 80px;      
+    }
+    .stage-of-work {
+        margin-bottom: 60px;
+    }
+}
 /*media запросы*/
 
 @media screen and (max-width:991px) {
@@ -403,6 +418,10 @@ body {
     }
     .reviews-header-input {
         transform: translateX(-50%) translateY(-20%) !important;
+    }
+    /*fifth page*/
+    .scheme-work {
+        background: none;
     }
 }
 
