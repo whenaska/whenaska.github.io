@@ -240,7 +240,7 @@ body {
   padding: 10px;
   color: #ffffff;
 }
-/*fifrh page*/
+/*fifth page*/
 .scheme-work {
   padding-top: 70px;
   padding-bottom: 40px;
@@ -251,6 +251,44 @@ body {
 }
 .scheme-work .stage-of-work {
   margin-bottom: 60px;
+}
+/*sixth page*/
+.in-cost {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f5f5f5;
+}
+.in-cost .title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.in-cost .title .in-cost-primary-title {
+  color: #286c0a;
+}
+.in-cost .col-xl-3 {
+  margin-bottom: 70px;
+}
+.in-cost .in-cost-items-number {
+  display: table-cell !important;
+  text-align: center;
+  vertical-align: top;
+  height: 50px !important;
+  width: 50px !important;
+  background: #f5f5f5 url(../img/num-wrap.png) top center no-repeat;
+  color: #ffffff;
+  font-size: 3rem;
+}
+.in-cost .secondary-titles {
+  display: table-cell !important;
+  padding-left: 0.5rem;
+}
+.in-cost .in-cost-secondary-title {
+  font-size: 2rem;
+  display: block !important;
+}
+.in-cost .in-cost-secondary-sub-title {
+  font-size: 1.5rem;
+  display: block !important;
 }
 /*media запросы*/
 @media screen and (max-width: 991px) {
