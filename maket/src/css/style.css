@@ -297,21 +297,20 @@ body {
 }
 .worries .worries-primary-title {
   text-align: center;
-  margin-bottom: 60px;
 }
 .worries .girl {
   position: absolute;
   left: 50%;
   margin-left: -130px;
-  margin-top: 70px;
   width: 260px;
-  height: 526px;
-  background-image: url(../img/girl.png);
+  height: 597.25px;
+  background: url(../img/girl.png) center bottom no-repeat;
 }
 .worries .problems {
   min-height: 397px;
   border: 3px solid #dddddd;
   padding: 40px;
+  margin-top: 60px;
 }
 .worries .problems .worries-problems-secondary-title {
   color: #6b6b6b;
@@ -327,6 +326,7 @@ body {
   min-height: 397px;
   border: 3px solid #286c0a;
   padding: 40px;
+  margin-top: 60px;
 }
 .worries .solves .list-solves {
   font-size: 1.7rem;
@@ -335,9 +335,34 @@ body {
   list-style-image: url(../img/icon-check.png);
   margin-top: 30px;
 }
+/*eighth page*/
+.materials {
+  padding: 70px 0px;
+  background: #ffffff url(../img/bg-materials.jpg) center center no-repeat;
+}
+.materials .img-for-materials {
+  margin-top: 70px;
+}
+.materials .materials-secondary-title {
+  margin-bottom: 30px;
+}
+.materials .type-of-material {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.materials .materials-certificate {
+  font-size: 1.5rem;
+  color: #46b814;
+}
+.materials .materials-certificate:active {
+  color: #286c0a;
+}
 /*media запросы*/
 @media screen and (max-width: 1399px) {
   /*seventh page*/
+  .girl {
+    height: 648.25px !important;
+  }
   .problems {
     min-height: 448px !important;
   }
@@ -347,6 +372,9 @@ body {
 }
 @media screen and (max-width: 1199px) {
   /*seventh page*/
+  .girl {
+    height: 725.25px !important;
+  }
   .problems {
     min-height: 525px !important;
   }
@@ -458,6 +486,16 @@ body {
   }
   .worries .list-solves {
     font-size: 2.8rem !important;
+  }
+  /*eighth page*/
+  .materials {
+    background: #ffffff url(../img/bg-materials-vertical.jpg) center center repeat;
+  }
+  .materials .type-of-material {
+    font-size: 2.8rem;
+  }
+  .materials .materials-certificate {
+    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 575px) {

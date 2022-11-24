@@ -358,29 +358,30 @@ body {
         display: block !important;
     }
 }
+
 /*seventh page*/
 .worries {
     padding: 70px 0px;
 
     .worries-primary-title {
         text-align: center;
-        margin-bottom: 60px;
+        
     }
 
     .girl {
         position: absolute;
         left: 50%;
         margin-left: -130px;
-        margin-top: 70px;
         width: 260px;
-        height: 526px;
-        background-image: url(../img/girl.png);
+        height: 597.25px;
+        background: url(../img/girl.png) center bottom no-repeat ;
     }
 
     .problems {
         min-height: 397px;
         border: 3px solid @border-input;
         padding: 40px;
+        margin-top: 60px;
 
         .worries-problems-secondary-title {
             color: @dark-and-light-text;
@@ -388,7 +389,7 @@ body {
         
         .list-problems {
             font-size: 1.7rem;
-            
+
             li {
                 list-style-image: url(../img/icon-delete.png);
                 margin-top: 30px; 
@@ -400,7 +401,7 @@ body {
         min-height: 397px;
         border: 3px solid @dark-background-color;
         padding: 40px;
-        
+        margin-top: 60px;
         .list-solves {
             font-size: 1.7rem;
 
@@ -412,9 +413,38 @@ body {
     }
 }
 
+/*eighth page*/
+.materials {
+    padding: 70px 0px;
+    background: @light url(../img/bg-materials.jpg) center center no-repeat;
+
+    .img-for-materials {
+        margin-top: 70px;
+    }
+    .materials-secondary-title {
+        margin-bottom: 30px;
+    }
+
+    .type-of-material {
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+    
+    .materials-certificate {
+        font-size: 1.5rem;
+        color: @icons-color;
+    }
+    .materials-certificate:active {
+        color: @dark-background-color;
+    }
+}
+
 /*media запросы*/
 @media screen and (max-width:1399px) {
     /*seventh page*/
+    .girl {
+        height: 648.25px !important;
+    }
     .problems {
         min-height: 448px !important;
     }
@@ -426,6 +456,9 @@ body {
 
 @media screen and (max-width:1199px) {
     /*seventh page*/
+    .girl {
+        height: 725.25px !important;
+    }
     .problems {
         min-height: 525px !important;
     }
@@ -562,6 +595,17 @@ body {
             font-size: 2.8rem !important;
         }
 
+    }
+    /*eighth page*/
+    .materials {
+        background: @light url(../img/bg-materials-vertical.jpg) center center repeat;
+        .type-of-material {
+            font-size: 2.8rem;
+        }
+
+        .materials-certificate {
+            font-size: 2.8rem;
+        }
     }
 }
 
