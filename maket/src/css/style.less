@@ -42,6 +42,7 @@
 @bg-light-color: #f5f5f5;
 @light: #fff;
 @border-input: #dddddd;
+@dark-and-light-text: #6b6b6b;
 
 
 /* basic settings */
@@ -357,8 +358,82 @@ body {
         display: block !important;
     }
 }
+/*seventh page*/
+.worries {
+    padding: 70px 0px;
+
+    .worries-primary-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .girl {
+        position: absolute;
+        left: 50%;
+        margin-left: -130px;
+        margin-top: 70px;
+        width: 260px;
+        height: 526px;
+        background-image: url(../img/girl.png);
+    }
+
+    .problems {
+        min-height: 397px;
+        border: 3px solid @border-input;
+        padding: 40px;
+
+        .worries-problems-secondary-title {
+            color: @dark-and-light-text;
+        }
+        
+        .list-problems {
+            font-size: 1.7rem;
+            
+            li {
+                list-style-image: url(../img/icon-delete.png);
+                margin-top: 30px; 
+            }
+        }
+    }
+
+    .solves {
+        min-height: 397px;
+        border: 3px solid @dark-background-color;
+        padding: 40px;
+        
+        .list-solves {
+            font-size: 1.7rem;
+
+            li {
+                list-style-image: url(../img/icon-check.png);
+                margin-top: 30px; 
+            }
+        }
+    }
+}
 
 /*media запросы*/
+@media screen and (max-width:1399px) {
+    /*seventh page*/
+    .problems {
+        min-height: 448px !important;
+    }
+
+    .solves {
+        min-height: 448px !important;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    /*seventh page*/
+    .problems {
+        min-height: 525px !important;
+    }
+
+    .solves {
+        min-height: 525px !important;
+    }
+}
 
 @media screen and (max-width:991px) {
 
@@ -464,6 +539,29 @@ body {
     /*fifth page*/
     .scheme-work {
         background: none;
+    }
+
+    /*seventh page*/
+    .worries {
+        .girl {
+            visibility: hidden;
+        }
+        
+        .problems {
+            min-height: 5px !important;
+            margin-bottom: 50px;
+        }
+        .list-problems {
+            font-size: 2.8rem !important;
+        }
+
+        .solves {
+            min-height: 5px !important;
+        }
+        .list-solves {
+            font-size: 2.8rem !important;
+        }
+
     }
 }
 

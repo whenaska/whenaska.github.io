@@ -291,7 +291,69 @@ body {
   font-size: 1.5rem;
   display: block !important;
 }
+/*seventh page*/
+.worries {
+  padding: 70px 0px;
+}
+.worries .worries-primary-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.worries .girl {
+  position: absolute;
+  left: 50%;
+  margin-left: -130px;
+  margin-top: 70px;
+  width: 260px;
+  height: 526px;
+  background-image: url(../img/girl.png);
+}
+.worries .problems {
+  min-height: 397px;
+  border: 3px solid #dddddd;
+  padding: 40px;
+}
+.worries .problems .worries-problems-secondary-title {
+  color: #6b6b6b;
+}
+.worries .problems .list-problems {
+  font-size: 1.7rem;
+}
+.worries .problems .list-problems li {
+  list-style-image: url(../img/icon-delete.png);
+  margin-top: 30px;
+}
+.worries .solves {
+  min-height: 397px;
+  border: 3px solid #286c0a;
+  padding: 40px;
+}
+.worries .solves .list-solves {
+  font-size: 1.7rem;
+}
+.worries .solves .list-solves li {
+  list-style-image: url(../img/icon-check.png);
+  margin-top: 30px;
+}
 /*media запросы*/
+@media screen and (max-width: 1399px) {
+  /*seventh page*/
+  .problems {
+    min-height: 448px !important;
+  }
+  .solves {
+    min-height: 448px !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /*seventh page*/
+  .problems {
+    min-height: 525px !important;
+  }
+  .solves {
+    min-height: 525px !important;
+  }
+}
 @media screen and (max-width: 991px) {
   /*for all pages*/
   .primary-title {
@@ -379,6 +441,23 @@ body {
   /*fifth page*/
   .scheme-work {
     background: none;
+  }
+  /*seventh page*/
+  .worries .girl {
+    visibility: hidden;
+  }
+  .worries .problems {
+    min-height: 5px !important;
+    margin-bottom: 50px;
+  }
+  .worries .list-problems {
+    font-size: 2.8rem !important;
+  }
+  .worries .solves {
+    min-height: 5px !important;
+  }
+  .worries .list-solves {
+    font-size: 2.8rem !important;
   }
 }
 @media screen and (max-width: 575px) {
