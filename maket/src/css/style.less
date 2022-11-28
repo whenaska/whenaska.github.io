@@ -327,7 +327,7 @@ body {
 
     .swiper-button-next::after, .swiper-button-prev::after {
         padding: 10px;
-        color: green;
+        color: @icons-color;
     }
 }
 
@@ -455,8 +455,17 @@ body {
     .materials-certificate:active {
         color: @dark-background-color;
     }
+    
+    .swiper-button-next::after, .swiper-button-prev::after {
+        padding: 10px;
+        color: @icons-color;
+    }
 }
-
+.materials-mobile {
+    position: absolute;
+    height: 0; width: 0;
+    visibility: hidden;
+}
 /*nineth page*/
 .view-work {
     
@@ -670,6 +679,15 @@ body {
         .materials-certificate {
             font-size: 2.8rem;
         }
+    }
+    .materials-mobile {
+        visibility: visible;
+        position: relative;
+        height: auto;
+        width: auto;
+    }
+    .materials-pc {
+        display: none;
     }
 
     /*nineth page*/
