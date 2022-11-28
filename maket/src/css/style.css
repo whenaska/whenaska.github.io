@@ -262,6 +262,17 @@ body {
 .scheme-work .stage-of-work {
   margin-bottom: 60px;
 }
+.scheme-work .swiper-button-next::after,
+.scheme-work .swiper-button-prev::after {
+  padding: 10px;
+  color: green;
+}
+.scheme-work-mobile {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
 /*sixth page*/
 .in-cost {
   padding-top: 70px;
@@ -509,6 +520,18 @@ body {
   /*fifth page*/
   .scheme-work {
     background: none;
+  }
+  .scheme-work .stage-of-work {
+    margin-bottom: 0px !important;
+  }
+  .scheme-work-mobile {
+    visibility: visible;
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  .scheme-work-pc {
+    display: none;
   }
   /*seventh page*/
   .worries .girl {
