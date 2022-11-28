@@ -195,8 +195,8 @@ body {
 
 /*second page*/
 .benefit {
-    margin-top: 100px;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
     .benefit-primary-title {
         margin-bottom: 100px;
     }
@@ -204,12 +204,18 @@ body {
     .img-benefit {
         margin-bottom: 30px;
     }
-    
-    .secondary-sub-title {
-        margin-bottom: 80px;
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        padding: 10px;
+        color: @icons-color;
     }
 }
-
+.benefit-mobile {
+    position: absolute;
+    height: 0; 
+    width: 0;
+    visibility: hidden;
+}
 /*third page*/
 .price {
     background-color: @dark-background-color;
@@ -219,6 +225,7 @@ body {
 
     .choice-order {
         padding: 30px 10px;
+        margin-bottom: 20px;
         background-color: @light;
         color: @text-color;
 
@@ -296,13 +303,13 @@ body {
         transform: translateX(-50%) translateY(25%);
     }
     
+    .swiper-button-next::after, .swiper-button-prev::after {
+        background-color: @icons-color;
+        padding: 10px;
+        color: @light;
+    }
 } 
 
-.swiper-button-next::after, .swiper-button-prev::after {
-    background-color: @icons-color;
-    padding: 10px;
-    color: @light;
-}
 
 /*fifth page*/
 .scheme-work {
@@ -572,7 +579,16 @@ body {
     .main-title-trigger {
         font-size: 3.5rem;
     }
-
+    /*second page*/
+    .benefit-pc {
+        display: none;
+    }
+    .benefit-mobile {
+        visibility: visible;
+        position: relative;
+        height: auto;
+        width: auto;
+    }
     /*third page*/
     .choice-order {
         border: none;

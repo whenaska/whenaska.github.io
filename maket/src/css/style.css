@@ -146,7 +146,8 @@ body {
 }
 /*second page*/
 .benefit {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .benefit .benefit-primary-title {
   margin-bottom: 100px;
@@ -154,8 +155,16 @@ body {
 .benefit .img-benefit {
   margin-bottom: 30px;
 }
-.benefit .secondary-sub-title {
-  margin-bottom: 80px;
+.benefit .swiper-button-next::after,
+.benefit .swiper-button-prev::after {
+  padding: 10px;
+  color: #46b814;
+}
+.benefit-mobile {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
 /*third page*/
 .price {
@@ -166,6 +175,7 @@ body {
 }
 .price .choice-order {
   padding: 30px 10px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   color: #1a1820;
 }
@@ -234,8 +244,8 @@ body {
   -webkit-transform: translateX(-50%) translateY(25%);
           transform: translateX(-50%) translateY(25%);
 }
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.reviews .swiper-button-next::after,
+.reviews .swiper-button-prev::after {
   background-color: #46b814;
   padding: 10px;
   color: #ffffff;
@@ -465,6 +475,16 @@ body {
   }
   .main-title-trigger {
     font-size: 3.5rem;
+  }
+  /*second page*/
+  .benefit-pc {
+    display: none;
+  }
+  .benefit-mobile {
+    visibility: visible;
+    position: relative;
+    height: auto;
+    width: auto;
   }
   /*third page*/
   .choice-order {
