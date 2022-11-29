@@ -935,8 +935,54 @@
             </div>
         </div>
     </div>
-    <!--popup-->
-    <div class="popup" id="popup-request">
+    <!--tenth page-->
+    <div class="additional-services">
+        <div class="container">
+
+            <div class="header text-center">
+                <h1 class="primary-title additional-services-primary-title">Дополнительные услуги</h1>
+                <p class="primary-sub-title additional-services-primary-sub-title">Помимо механизированных штукатурных работ Вы можете заказать у нас следующие услуги</p>
+            </div>
+
+            <div class="main-content">
+                <div class="row text-center">
+
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+
+                            <img class="img-fluid" src="img/additional-services-1.jpg" alt="">
+                            <h2 class="secondary-title additional-services-secondary-title">Монтаж электропроводки</h2>
+                            <button id="btn-open-popup-price-table-1" class="btn additional-services-button" onclick="F_check_popup_price_table_1()">Цены</button>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+
+                            <img class="img-fluid" src="img/additional-services-2.jpg" alt="">
+                            <h2 class="secondary-title additional-services-secondary-title">Стяжка пола</h2>
+                            <button id="btn-open-popup-price-table-2" class="btn additional-services-button" onclick="F_check_popup_price_table_2()">Цены</button>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+
+                            <img class="img-fluid" src="img/additional-services-3.jpg" alt="">
+                            <h2 class="secondary-title additional-services-secondary-title">Кладка перегородок</h2>
+                            <button id="btn-open-popup-price-table-3" class="btn additional-services-button" onclick="F_check_popup_price_table_3()">Цены</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup request-->
+    <div id="popup-request" class="popup popup-request">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -962,8 +1008,390 @@
             </div>
         </div>
     </div>
+    <!--popup fisrt table-->
+    <div id="popup-first-table" class="popup popup-table popup-first-table">
+        <div class="container">
+            <img class="close-icon float-end" onclick="closePopup_price_table_1()" src="img/icon-close-black.png" alt="">
+            <h2 class="text-center secondary-title">Монтаж электропроводки</h2>
+
+            <table class="table-price first-table">
+                <tbody>
+                    <tr>
+                        <td class="service-table header-td">Услуга</td>
+                        <td class="price-table header-td">Цена</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка электросчетчика</td>
+                        <td class="price-table">1500 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка автомата</td>
+                        <td class="price-table">250 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Штробление гнезда под выключатель, розетку (в бетонной стене)</td>
+                        <td class="price-table">350 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Штробление гнезда под выключатель, роз. (в кирпичной/пеноблочной стене)</td>
+                        <td class="price-table">170 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Штробление канала для проводки кабеля (в бетонной стене)</td>
+                        <td class="price-table">270 за м.п.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Штробление канала для проводки кабеля (в кирпичной/пеноблочной стене)</td>
+                        <td class="price-table">220 за м.п.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Проводка кабеля</td>
+                        <td class="price-table">50 за м.п.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Проводка кабеля в гофре (включая протяжку кабеля в гофру)</td>
+                        <td class="price-table">80 за м.п.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка светильника</td>
+                        <td class="price-table">200 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка трансформатора (на освещение)</td>
+                        <td class="price-table">200 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Монтаж и подключение люстры</td>
+                        <td class="price-table">850 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка пакетника, УЗО</td>
+                        <td class="price-table">700 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Электрощит монтаж</td>
+                        <td class="price-table">2500 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Вентилятор (установка в вытяжку, подключение)</td>
+                        <td class="price-table">400 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка звонка</td>
+                        <td class="price-table">250 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Установка соединительной коробки</td>
+                        <td class="price-table">250 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Устройство теплых полов</td>
+                        <td class="price-table">800 за м2</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Заделка штробы</td>
+                        <td class="price-table">50 за м.п.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Сверление отверстий в ГКЛ</td>
+                        <td class="price-table">50 за шт.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">Сверление отверстий в реечном потолке</td>
+                        <td class="price-table">80 за шт.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--popup second table-->
+    <div id="popup-second-table" class="popup popup-table popup-second-table">
+        <div class="container container-second-table text-center">
+            <img class="close-icon float-end" onclick="closePopup_price_table_2()" src="img/icon-close-black.png" alt="">
+            <h2 class="text-center secondary-title">Стяжка пола</h2>
+                
+            <table class="table-price second-table">
+                <tbody>
+
+                    <tr>
+                        <td class="service-table header-td">Площадь</td>
+                        <td class="price-table header-td">Цена 5см</td>
+                        <td class="price-table header-td">Цена 6см</td>
+                        <td class="price-table header-td">Цена 7см</td>
+                        <td class="price-table header-td">Цена 8см</td>
+                        <td class="price-table header-td">Цена 9см</td>
+                        <td class="price-table header-td">Цена 10см</td>
+                        <td class="price-table header-td">Цена 11см</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">50</td>
+                        <td class="price-table">860</td>
+                        <td class="price-table">860</td>
+                        <td class="price-table">860</td>
+                        <td class="price-table">870</td>
+                        <td class="price-table">880</td>
+                        <td class="price-table">910</td>
+                        <td class="price-table">960</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">55</td>
+                        <td class="price-table">840</td>
+                        <td class="price-table">870</td>
+                        <td class="price-table">900</td>
+                        <td class="price-table">930</td>
+                        <td class="price-table">960</td>
+                        <td class="price-table">990</td>
+                        <td class="price-table">1020</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">65</td>
+                        <td class="price-table">800</td>
+                        <td class="price-table">830</td>
+                        <td class="price-table">860</td>
+                        <td class="price-table">890</td>
+                        <td class="price-table">920</td>
+                        <td class="price-table">950</td>
+                        <td class="price-table">980</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">70</td>
+                        <td class="price-table">780</td>
+                        <td class="price-table">810</td>
+                        <td class="price-table">840</td>
+                        <td class="price-table">870</td>
+                        <td class="price-table">900</td>
+                        <td class="price-table">930</td>
+                        <td class="price-table">960</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">75</td>
+                        <td class="price-table">760</td>
+                        <td class="price-table">790</td>
+                        <td class="price-table">820</td>
+                        <td class="price-table">850</td>
+                        <td class="price-table">880</td>
+                        <td class="price-table">910</td>
+                        <td class="price-table">940</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">80</td>
+                        <td class="price-table">740</td>
+                        <td class="price-table">770</td>
+                        <td class="price-table">800</td>
+                        <td class="price-table">830</td>
+                        <td class="price-table">860</td>
+                        <td class="price-table">890</td>
+                        <td class="price-table">920</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">85</td>
+                        <td class="price-table">720</td>
+                        <td class="price-table">750</td>
+                        <td class="price-table">780</td>
+                        <td class="price-table">810</td>
+                        <td class="price-table">840</td>
+                        <td class="price-table">870</td>
+                        <td class="price-table">900</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">90</td>
+                        <td class="price-table">710</td>
+                        <td class="price-table">740</td>
+                        <td class="price-table">770</td>
+                        <td class="price-table">800</td>
+                        <td class="price-table">830</td>
+                        <td class="price-table">860</td>
+                        <td class="price-table">890</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">95</td>
+                        <td class="price-table">680</td>
+                        <td class="price-table">710</td>
+                        <td class="price-table">740</td>
+                        <td class="price-table">770</td>
+                        <td class="price-table">800</td>
+                        <td class="price-table">830</td>
+                        <td class="price-table">860</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">100</td>
+                        <td class="price-table">660</td>
+                        <td class="price-table">690</td>
+                        <td class="price-table">720</td>
+                        <td class="price-table">750</td>
+                        <td class="price-table">780</td>
+                        <td class="price-table">810</td>
+                        <td class="price-table">840</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">150</td>
+                        <td class="price-table">580</td>
+                        <td class="price-table">610</td>
+                        <td class="price-table">640</td>
+                        <td class="price-table">670</td>
+                        <td class="price-table">700</td>
+                        <td class="price-table">730</td>
+                        <td class="price-table">760</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">200</td>
+                        <td class="price-table">560</td>
+                        <td class="price-table">590</td>
+                        <td class="price-table">620</td>
+                        <td class="price-table">650</td>
+                        <td class="price-table">680</td>
+                        <td class="price-table">710</td>
+                        <td class="price-table">740</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">300</td>
+                        <td class="price-table">540</td>
+                        <td class="price-table">570</td>
+                        <td class="price-table">600</td>
+                        <td class="price-table">630</td>
+                        <td class="price-table">660</td>
+                        <td class="price-table">690</td>
+                        <td class="price-table">720</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table">400</td>
+                        <td class="price-table">520</td>
+                        <td class="price-table">550</td>
+                        <td class="price-table">580</td>
+                        <td class="price-table">610</td>
+                        <td class="price-table">640</td>
+                        <td class="price-table">670</td>
+                        <td class="price-table">700</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">500</td>
+                        <td class="price-table">510</td>
+                        <td class="price-table">540</td>
+                        <td class="price-table">570</td>
+                        <td class="price-table">600</td>
+                        <td class="price-table">630</td>
+                        <td class="price-table">660</td>
+                        <td class="price-table">690</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">1000</td>
+                        <td class="price-table">500</td>
+                        <td class="price-table">530</td>
+                        <td class="price-table">560</td>
+                        <td class="price-table">590</td>
+                        <td class="price-table">620</td>
+                        <td class="price-table">650</td>
+                        <td class="price-table">680</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="service-table">2000</td>
+                        <td class="price-table">490</td>
+                        <td class="price-table">520</td>
+                        <td class="price-table">550</td>
+                        <td class="price-table">580</td>
+                        <td class="price-table">610</td>
+                        <td class="price-table">640</td>
+                        <td class="price-table">670</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--popup third table-->
+    <div id="popup-third-table" class="popup popup-table popup-third-table">
+        <div class="container container-third-table">
+            <img class="close-icon float-end" onclick="closePopup_price_table_3()" src="img/icon-close-black.png" alt="">
+            <h2 class="text-center secondary-title">Кладка перегородок</h2>
+            <table class="table-price third-table">
+                <tbody>
+
+                    <tr>
+                        <td class="service-table header-td">Наименование работы</td>
+                        <td class="unit-table header-td">Ед. изм.</td>
+                        <td class="price-table header-td">Цена в руб.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table header-td">Кладка из кирпича, керамических блоков несущих и ограждающих конструкций стен</td>
+                        <td class="unit-table header-td">м<sup>3</sup></td>
+                        <td class="price-table header-td">2600,0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table header-td">Кладка из блоков ячеистого бетона (пенобетон, газосиликат) несущих и ограждающих конструкций стен</td>
+                        <td class="unit-table header-td">м<sup>3</sup></td>
+                        <td class="price-table header-td">1800,0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table header-td">Кладка перегородок</td>
+                        <td class="unit-table header-td">м<sup>2</sup></td>
+                        <td class="price-table header-td">700,0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table header-td">Кладка арочных сводов оконных и дверных проемов</td>
+                        <td class="unit-table header-td">м.п.</td>
+                        <td class="price-table header-td">900,0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table header-td">Установка ж/б перемычек на растворе</td>
+                        <td class="unit-table header-td">шт.</td>
+                        <td class="price-table header-td">600,0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="service-table header-td">Устройство монолитных ж/б перекрытий</td>
+                        <td class="unit-table header-td">м<sup>3</sup></td>
+                        <td class="price-table header-td">4200,0</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
     <!--dark-->
     <div id="dark-bg" class="dark"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 

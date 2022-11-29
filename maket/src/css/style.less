@@ -43,7 +43,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @dark-and-light-text: #6b6b6b;
-
+@bg-for-popup-table: #c4c4c4;
 
 /* basic settings */
 html {
@@ -71,6 +71,7 @@ body {
 .btn:active {
     background-color: @btn-color-hover !important;
     color: @light !important;
+    border: none !important;
 }
 
 
@@ -156,6 +157,47 @@ body {
 .Active {
     display: block;
 }
+
+.popup-table {
+    font-size: 2rem;
+
+    .container {
+        height: 90vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .close-icon {
+        margin: 0px;
+    }
+
+    .secondary-title {
+        margin: 30px 0px;
+    }
+    
+    .table-price {
+        border: 2px solid @bg-for-popup-table;
+        border-collapse: collapse;
+
+        td {
+            padding: 10px;
+            border: 2px solid @bg-for-popup-table;
+        }
+        tr:nth-child(odd) {
+            background-color: @border-input;
+        }
+
+        .price-table {
+            text-align: center;
+        }
+    }
+
+}
+.container-third-table {
+    height: 680px !important;
+    overflow:auto !important;
+}
+
 /*typography*/
 .primary-title {
     line-height: 1.45;
@@ -505,6 +547,7 @@ body {
     height: 0; width: 0;
     visibility: hidden;
 }
+
 /*nineth page*/
 .view-work {
     
@@ -532,6 +575,26 @@ body {
         padding: 10px;
     }
 }
+
+/*tenth page*/
+.additional-services {
+    background-color: @dark-background-color;
+    color: @light;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    img {
+        width: 600px;
+    }
+    .secondary-title {
+        margin: 20px 0px;
+    }
+    .additional-services-button {
+        font-size: 1.6rem;
+        padding: 10px 50px;
+        margin-bottom: 50px;
+    }
+}
+
 /*media запросы*/
 @media screen and (max-width:1399px) {
     /*seventh page*/
@@ -580,7 +643,7 @@ body {
     }
 
     .btn {
-        font-size: 3rem;
+        font-size: 3rem !important;
         .bold();
     }
 
@@ -607,19 +670,31 @@ body {
         font-size: 4rem;
         margin-bottom: 80px;
     }
-
+    .form-btn  {
+        padding: 30px 0px;
+        height: 100px !important;
+    }
     small {
         font-size: 2.7rem !important;
     }
+    /*popup*/
+    .popup {
+        font-size: 2rem !important;
 
+    }
+    .container-second-table {
+        height: 900px !important;
+        overflow:auto !important;
+    }
     /*first page*/
     .main {
+        text-align: center;
+        background: @light url(../img/texture-wall.jpg) center top no-repeat;
         .form {
             box-shadow: 0 0 10px @border-input;
             box-shadow: 0 0 10px @border-input;
         }
-        text-align: center;
-        background: @light url(../img/texture-wall.jpg) center top no-repeat;
+        
     }
 
     .logo {
@@ -746,6 +821,8 @@ body {
             padding: 20px 10px;
         }
     }
+
+
 }
 @media screen and (max-width:767px) {
 
