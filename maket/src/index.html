@@ -26,7 +26,7 @@
                     </div>
 
                     <div class ="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12 text-md-center text-sm-center text-center">
-                        <button class="btn request-main-page-btn float-end float-md-none float-sm-none float-none">Получить консультацию</button>
+                        <button id="btn-open-popup-request-1" class="btn request-main-page-btn float-end float-md-none float-sm-none float-none" onclick="F_check_popup_request()">Получить консультацию</button>
                     </div>
 
                 </div>
@@ -49,10 +49,10 @@
                             <h2 class="form-header main-form-header">Для расчёта точной стоимости<br>закажите <strong>бесплатный</strong> выезд замерщика</h2>
                             <form action="#">
                                 <label class="header-input main-header-input" for="#">Ваше имя</label>
-                                <input class="form-input main-form-input" type="text">
+                                <input class="form-input main-form-input" required type="text">
 
                                 <label class="header-input main-header-input" for="#">Ваш телефон</label>
-                                <input class="form-input main-form-input" type="text">
+                                <input id="mask-telephone" class="form-input main-form-input" required type="text">
 
                                 <button class="btn form-btn main-form-btn" type="submit">Оставьте заявку</button>
 
@@ -186,7 +186,7 @@
                                 <li>Можно сразу клеить обои</li>
                             </ul>
     
-                            <button class="btn price-choice-order-btn">Заказать</button>
+                            <button id="btn-open-popup-request-2" class="btn price-choice-order-btn" onclick="F_check_popup_request()">Заказать</button>
 
                         </div>
 
@@ -207,7 +207,7 @@
                                 <br>
                             </ul>
     
-                            <button class="btn price-choice-order-btn">Заказать</button>
+                            <button id="btn-open-popup-request-3" class="btn price-choice-order-btn" onclick="F_check_popup_request()">Заказать</button>
 
                         </div>
 
@@ -228,7 +228,7 @@
                                 <li>Для влажных помещений</li>
                             </ul>
     
-                            <button class="btn price-choice-order-btn">Заказать</button>
+                            <button id="btn-open-popup-request-4" class="btn price-choice-order-btn" onclick="F_check_popup_request()">Заказать</button>
                             
                         </div>
 
@@ -467,25 +467,27 @@
                                     <div class="col-xl-4 col-lg-6">
 
                                         <label class="header-input reviews-header-input reviews-header-input-name" for="#">Ваше имя</label>
-                                        <input class="form-input r5eviews-form-input" type="text">
+                                        <input class="form-input r5eviews-form-input" required type="text">
 
                                     </div>
 
                                     <div class="col-xl-4 col-lg-6">
 
                                         <label class="header-input reviews-header-input reviews-header-input-telephone" for="#">Номер телефона</label>
-                                        <input class="form-input reviews-form-input" type="text">
+                                        <input class="form-input reviews-form-input" id="mask-telephone" required type="text">
 
+                                    </div>
+                                </div>
+
+                                <div class="row text-center justify-content-center">
+                                    <div class="col-xl-6">
+                                        <button class="btn form-btn reviews-form-btn" type="submit">Оставьте заявку</button>
                                     </div>
                                 </div>
                             </form>    
                         
 
-                                <div class="row text-center justify-content-center">
-                                    <div class="col-xl-6">
-                                        <button class="btn form-btn main-form-btn" type="submit">Оставьте заявку</button>
-                                    </div>
-                                </div>
+                                
                         </div>
                         
                     </div>
@@ -894,7 +896,7 @@
             </div>
         </div>
       </div>
-    <!--tenth page-->
+    <!--nineth page-->
     <div class="view-work">
         <div class="container">
             <div class="row">
@@ -918,10 +920,10 @@
                         <form action="#">
 
                             <label class="header-input view-work-header-input" for="#">Ваше имя</label>
-                            <input class="form-input view-work-form-input" type="text">
+                            <input class="form-input view-work-form-input" required type="text">
 
                             <label class="header-input view-work-header-input" for="#">Номер телефона</label>
-                            <input class="form-input view-work-form-input" type="text">
+                            <input class="form-input view-work-form-input" id="mask-telephone" required type="text">
 
                             <button class="btn form-btn view-work-form-btn" type="submit">Записаться на просмотр</button>
 
@@ -933,6 +935,35 @@
             </div>
         </div>
     </div>
+    <!--popup-->
+    <div class="popup" id="popup-request">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="form popup-form">
+                        <img class="close-icon float-end" onclick="closePopup_request()" src="img/icon-close-black.png" alt="">
+                        <h2 class="form-header popup-form-header"><strong>Заинтересовало?</strong><br>Оставьте контактные данные для связи</h2>
+                        <form action="#">
+                            
+                            <label class="header-input popup-header-input" for="#">Ваше имя</label>
+                            <input class="form-input popup-form-input" required type="text">
+
+                            <label class="header-input popup-header-input" for="#">Ваш телефон</label>
+                            <input class="form-input popup-form-input" id="mask-telephone" required type="text">
+
+                            <label class="header-input popup-header-input" for="#">Сообщение</label>
+                            <textarea name="message" class="form-input popup-form-input message-from-client" required></textarea>
+
+                            <button class="btn form-btn popup-form-btn" type="submit">Оставьте заявку</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--dark-->
+    <div id="dark-bg" class="dark"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 

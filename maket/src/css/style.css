@@ -80,6 +80,49 @@ body {
   margin-top: 1.5rem;
   font-size: 1.3rem;
 }
+/*popup settings*/
+.popup {
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  position: fixed;
+  padding: 20px;
+  visibility: hidden;
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+  -webkit-transition: top 0.2s, -webkit-transform 0.2s;
+  transition: top 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, top 0.2s;
+  transition: transform 0.2s, top 0.2s, -webkit-transform 0.2s;
+  background-color: white;
+  border-radius: 10px;
+}
+.popup .close-icon {
+  margin-top: -40px;
+  margin-right: -40px;
+}
+.popup textarea {
+  width: 100%;
+}
+.Open {
+  visibility: visible;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+.dark {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 9999;
+}
+.Active {
+  display: block;
+}
 /*typography*/
 .primary-title {
   line-height: 1.45;
@@ -385,6 +428,7 @@ body {
 }
 .materials-mobile {
   position: absolute;
+  margin-top: -10000px;
   height: 0;
   width: 0;
   visibility: hidden;
@@ -459,10 +503,6 @@ body {
     margin-bottom: 30px;
   }
   /*form settings for all pages*/
-  .form {
-    -webkit-box-shadow: 0 0 10px #dddddd;
-            box-shadow: 0 0 10px #dddddd;
-  }
   .form-header {
     font-size: 4rem !important;
   }
@@ -474,6 +514,7 @@ body {
   }
   .form-input {
     font-size: 4rem;
+    margin-bottom: 80px;
   }
   small {
     font-size: 2.7rem !important;
@@ -482,6 +523,10 @@ body {
   .main {
     text-align: center;
     background: #ffffff url(../img/texture-wall.jpg) center top no-repeat;
+  }
+  .main .form {
+    -webkit-box-shadow: 0 0 10px #dddddd;
+            box-shadow: 0 0 10px #dddddd;
   }
   .logo {
     margin-bottom: 30px;
@@ -572,6 +617,7 @@ body {
     font-size: 2.8rem;
   }
   .materials-mobile {
+    margin-top: 0px;
     visibility: visible;
     position: relative;
     height: auto;
