@@ -619,6 +619,24 @@ body {
     }
 }
 
+/*twelfth page*/
+.contacts{
+    padding: 70px 0px;
+    background: @light url(../img/bg-contacts.jpg) center center no-repeat;
+    .contacts-primary-title {
+        margin-bottom: 40px;
+    }
+    .additional-information {
+        font-size: 1.7rem;
+    }
+    .contacts-form {
+        background-color: @light;
+    }
+    .contacts-form-btn {
+        margin-top: 40px;
+    }
+}
+
 /*media запросы*/
 @media screen and (max-width:1399px) {
     /*seventh page*/
@@ -850,6 +868,20 @@ body {
     .questions {
         .question-answer {
             font-size: 3rem;
+        }
+    }
+
+    /*twelfth page*/
+    .contacts {
+        background: @light url(../img/bg-contacts-mobile.jpg) center center no-repeat;
+        .additional-information {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .contacts-form {
+            margin-top: 50px;
+            box-shadow: 0 0 10px @border-input;
+            box-shadow: 0 0 10px @border-input;
         }
     }
 

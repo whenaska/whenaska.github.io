@@ -526,6 +526,23 @@ body {
   margin-top: 30px;
   font-size: 2rem;
 }
+/*twelfth page*/
+.contacts {
+  padding: 70px 0px;
+  background: #ffffff url(../img/bg-contacts.jpg) center center no-repeat;
+}
+.contacts .contacts-primary-title {
+  margin-bottom: 40px;
+}
+.contacts .additional-information {
+  font-size: 1.7rem;
+}
+.contacts .contacts-form {
+  background-color: #ffffff;
+}
+.contacts .contacts-form-btn {
+  margin-top: 40px;
+}
 /*media запросы*/
 @media screen and (max-width: 1399px) {
   /*seventh page*/
@@ -725,6 +742,19 @@ body {
   /*eleventh page*/
   .questions .question-answer {
     font-size: 3rem;
+  }
+  /*twelfth page*/
+  .contacts {
+    background: #ffffff url(../img/bg-contacts-mobile.jpg) center center no-repeat;
+  }
+  .contacts .additional-information {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .contacts .contacts-form {
+    margin-top: 50px;
+    -webkit-box-shadow: 0 0 10px #dddddd;
+            box-shadow: 0 0 10px #dddddd;
   }
 }
 @media screen and (max-width: 767px) {
