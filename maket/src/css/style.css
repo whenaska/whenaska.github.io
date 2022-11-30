@@ -505,6 +505,27 @@ body {
   padding: 10px 50px;
   margin-bottom: 50px;
 }
+/*eleventh page*/
+.questions {
+  padding: 70px 0px;
+}
+.questions .primary-title {
+  text-align: center;
+}
+.questions .question-answer {
+  font-size: 1.6rem;
+}
+.questions .question-answer .question {
+  margin-top: 40px;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.questions .request-in-questions {
+  margin-top: 60px;
+}
+.questions .request-in-questions .request-questions-page-btn {
+  margin-top: 30px;
+  font-size: 2rem;
+}
 /*media запросы*/
 @media screen and (max-width: 1399px) {
   /*seventh page*/
@@ -700,6 +721,10 @@ body {
   .view-work .view-work-form-btn {
     min-height: 90px;
     padding: 20px 10px;
+  }
+  /*eleventh page*/
+  .questions .question-answer {
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 767px) {

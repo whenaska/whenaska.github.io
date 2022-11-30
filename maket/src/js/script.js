@@ -13,7 +13,8 @@ function F_check_popup_request() {
     if((document.getElementById("btn-open-popup-request-1").click)||
     (document.getElementById("btn-open-popup-request-2").click)||
     (document.getElementById("btn-open-popup-request-3").click)||
-    (document.getElementById("btn-open-popup-request-4").click)){
+    (document.getElementById("btn-open-popup-request-4").click)||
+    (document.getElementById("btn-open-popup-request-5").click)){
 
         Popup_request.classList.add("Open");
         Dark_bg.classList.add("Active");
