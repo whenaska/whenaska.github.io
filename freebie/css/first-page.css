@@ -1,0 +1,110 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.best-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 92vh;
+  padding: 4vh 0vh;
+  background: url(../img/first-page-img/bg-little-x-o.png) center center no-repeat, url(../img/first-page-img/bg-little-0-romb.png) left center no-repeat, url(../img/first-page-img/bg-town.png) center bottom repeat-x;
+}
+
+.best-app .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.best-app .navigation .logo {
+  align-items: center;
+  height: 50px;
+}
+
+.best-app .navigation .logo p {
+  color: #fcae61;
+  font-weight: 700;
+  font-size: 30pt;
+}
+
+.best-app .navigation .logo span {
+  color: #242f51;
+}
+
+.best-app .navigation .navigation-items {
+  align-items: center;
+  width: 70%;
+}
+
+.best-app .navigation .navigation-items ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-app .navigation .navigation-items ul li {
+  display: flex;
+  align-items: center;
+}
+
+.best-app .navigation .navigation-items ul li a {
+  color: #242f51 !important;
+  text-decoration: none;
+  align-items: center;
+}
+
+.best-app .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.best-app .main-content .reward {
+  margin-top: 22vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.best-app .main-content .reward .star-reward {
+  position: absolute;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: #feaa25;
+}
+
+.best-app .main-content .reward .reward-text {
+  padding: 7.5px 50px;
+  border-radius: 100px;
+  font-size: 18pt;
+  color: #242f51;
+  background-color: #e2eaed;
+}
+
+.best-app .main-content .title {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.best-app .main-content .title .primary-title {
+  font-size: 60pt;
+  margin-bottom: 40px;
+}
+
+.best-app .main-content .buttons {
+  margin-top: 40px;
+  width: 60%;
+}
+
+.best-app .main-content .buttons a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #2500f9;
+}
+
+.best-app .main-content .img-phone {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+}

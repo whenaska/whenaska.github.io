@@ -1,0 +1,24 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.primary-title {
+  color: #242f51;
+  font-weight: 600;
+  font-size: 36pt;
+}
+
+.secondary-title {
+  color: #242f51;
+  font-weight: 600;
+  font-size: 20pt;
+}
+
+a {
+  text-decoration: none;
+  color: #2500f9;
+  transition: all 0.2s;
+}
+
+a:hover {
+  font-size: 17pt;
+}

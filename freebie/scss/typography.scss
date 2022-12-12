@@ -1,0 +1,23 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+
+.primary-title {
+    color: $colour-for-title;
+    font-weight: $semibold-font;
+    font-size: 36pt;
+}
+
+.secondary-title {
+    color: $colour-for-title;
+    font-weight: $semibold-font;
+    font-size: 20pt;
+}
+
+a {
+    text-decoration: none;
+    color: $btn-bg-colour;
+    transition: all 0.2s;
+}
+a:hover {
+    font-size: 17pt;
+}

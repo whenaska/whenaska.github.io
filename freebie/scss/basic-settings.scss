@@ -1,0 +1,17 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+/*body settings*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    font-weight: $regular-font;
+    color: $basic-colour-text;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center !important;
+    width: 70%;
+}
