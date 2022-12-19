@@ -1,0 +1,131 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+
+.awesome-features {
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    .container{
+        flex-flow: row nowrap;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between;
+        height: 92vh;
+        padding: 4vh 0vh;
+        .phone {
+            .bg-smartphone {
+                max-height: 80vh;
+                margin-top: 10vh;
+                left: 8%;
+                position: absolute;
+            }
+            .smartphone {
+                max-height: 80vh;
+                position: relative;
+                z-index: 10000;
+            }
+        }
+        .text {
+            display: flex;
+            flex-flow: wrap column;
+            align-content: space-between;
+            align-items: center;
+            .title {
+                h1 {
+                    margin-bottom: 3vh;
+                }
+                p {
+                    margin-bottom: 10vh;
+                }
+            }
+            .feature {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 7vh;
+                .img-for-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .bg-for-icon {
+                        position: absolute;
+                    }
+                    .icon {
+                        position: relative;
+                        z-index: 999;
+                    }
+                }
+                .title-for-icon {
+                    margin-left: 2vw;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        font-size: 20pt;
+                        margin-bottom: 2vh;
+                    }
+                }
+                
+            }
+            .first-feature {
+                h2 {
+                    color: $colour-for-icon-red;
+                }
+            }
+            .second-feature {
+                h2 {
+                    color: $colour-for-icon-blue;
+                }
+            }
+            .third-feature {
+                h2 {
+                    color: $colour-for-icon-green;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .awesome-features {
+        .container {
+            width: 90% !important;
+            .bg-smartphone {
+                left: -5% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .awesome-features {
+        .container {
+            .phone {
+                .bg-smartphone {
+                    display: none !important;
+                }
+                .smartphone {
+                    display: none !important;
+                }
+            }
+            .title {
+                h1 {
+                    font-size: 5vh;
+                }
+            }
+            .feature {
+                .title-for-icon {
+                    margin-left: 5vw !important;
+                    h2 {
+                        font-size: 3vh !important;
+                    }
+                }
+                .icon {
+                    height: 5vh;
+                }
+                .bg-for-icon {
+                    height: 8vh;
+                }
+            }
+        }
+    }
+}
