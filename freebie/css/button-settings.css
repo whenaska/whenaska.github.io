@@ -4,7 +4,7 @@
 /*button settings*/
 .basic-button {
   padding: 20px 40px;
-  border-radius: 32.5px;
+  border-radius: 100px;
   background-color: #2500f9;
   color: #ffffff;
   font-weight: 700;
@@ -18,4 +18,4 @@
 
 .basic-button:active {
   padding: 15px 30px;
-}
+}/*# sourceMappingURL=button-settings.css.map */

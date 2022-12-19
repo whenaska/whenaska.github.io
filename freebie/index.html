@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     
     <title>Freebie</title>
@@ -18,41 +18,53 @@
 
                 <div class="logo">
                     <p>App<span>Lab</span></p>
+                    <a href="javascript:void(0);" class="icon" onclick="openNavbar()">
+                        <div class="line-for-navbar"></div>
+                        <div class="line-for-navbar"></div>
+                        <div class="line-for-navbar"></div>
+                    </a>
                 </div>
 
-                <div class="navigation-items">
+                <div class="navigation-items" id="navigation">
                     <ul>
                         <li class="navigation-item"><a href="">Home</a></li>
                         <li class="navigation-item"><a href="">Key Features</a></li>
                         <li class="navigation-item"><a href="">Pricing</a></li>
                         <li class="navigation-item"><a href="">Testiminial</a></li>
-                        <li class="navigation-item"><a href="FAQ"></a></li>
+                        <li class="navigation-item"><a href="">FAQ</a></li>
                         <li class="navigation-item"><button class="basic-button">Try for free</button></li>
                     </ul>
+                    
                 </div>
             </div>
             <div class="main-content">
 
-                <div class="reward">
-                    <img class="star-reward" src="img/first-page-img/star-reward.png" alt="star-reward">
-                    <p class="reward-text">#1 Editiors Choice App of 2020</p>
+                <div class="text">
+                    <div class="reward">
+                        <img class="star-reward" src="img/first-page-img/star-reward.png" alt="star-reward">
+                        <p class="reward-text">#1 Editiors Choice App of 2020</p>
+                    </div>
+    
+                    <div class="title">
+                        <h1 class="primary-title">Best app for your modern lifestyle</h1>
+                        <p class="primary-sub-title">Increase productivity with a simple to-do app. App for managing your personal budgets.</p>
+                    </div>
+    
+                    <div class="buttons">
+                        <button class="basic-button">Try for free</button>
+                        <a href="">Watch demo video</a>
+                    </div>
                 </div>
 
-                <div class="title">
-                    <h1 class="primary-title">Best app for your modern lifestyle</h1>
-                    <p class="primary-sub-title">Increase productivity with a simple to-do app. App for managing your personal budgets.</p>
-                </div>
-
-                <div class="buttons">
-                    <button class="basic-button">Try for free</button>
-                    <a href="">Watch demo video</a>
-                </div>
-
-                <div class="img-phone">
-                    <img src="img/first-page-img/phone.png" alt="">
+                <div class="photo">
+                    <div class="img-phone">
+                        <img src="img/first-page-img/phone.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="js/navbar.js"></script>
 </body>
 </html>

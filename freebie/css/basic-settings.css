@@ -3,7 +3,7 @@
 /*colours*/
 /*body settings*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16pt;
   font-weight: 400;
   color: #616368;
@@ -16,3 +16,9 @@ body {
   align-items: center !important;
   width: 70%;
 }
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 90% !important;
+  }
+}/*# sourceMappingURL=basic-settings.css.map */

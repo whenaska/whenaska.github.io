@@ -22,3 +22,15 @@ a {
 a:hover {
   font-size: 17pt;
 }
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 2vh;
+  }
+  a {
+    font-size: 2vh !important;
+  }
+  button {
+    font-size: 2vh !important;
+  }
+}/*# sourceMappingURL=typography.css.map */
