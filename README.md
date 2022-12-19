@@ -10,3 +10,5 @@
 [Тест](https://whenaska.github.io/first-js/ "Тест")
 
 [Поросёнок Пётр](https://whenaska.github.io/petr/src/ "Поросёнок Пётр")
+
+[Freebie](https://whenaska.github.io/freebie/ "freebie")
