@@ -1,0 +1,53 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .container{
+        display: flex;
+        text-align: center;
+        align-items: center !important;
+        justify-content: center;
+        height: 30vh;
+        p {
+            color: $colour-for-title !important;
+            margin-bottom: 4vh;
+        }
+        .list-of-companies {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .mobile-version {
+            position: absolute;
+            top: -1000000vh;
+            visibility: hidden;
+            .swiper-button-next, .swiper-button-prev {
+                color: $btn-bg-colour;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .companies {
+        .container {
+            height: 20vh !important;
+        }
+        .pc-version {
+            display: none !important;
+        }
+        .mobile-version {
+            position: relative !important;
+            top: 0px !important;
+            visibility: visible !important;
+            img {
+                height: 7vh;
+            }
+        }
+    }
+}

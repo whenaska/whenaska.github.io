@@ -1,0 +1,51 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.companies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.companies .container {
+  display: flex;
+  text-align: center;
+  align-items: center !important;
+  justify-content: center;
+  height: 30vh;
+}
+.companies .container p {
+  color: #242f51 !important;
+  margin-bottom: 4vh;
+}
+.companies .container .list-of-companies {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.companies .container .mobile-version {
+  position: absolute;
+  top: -1000000vh;
+  visibility: hidden;
+}
+.companies .container .mobile-version .swiper-button-next, .companies .container .mobile-version .swiper-button-prev {
+  color: #2500f9;
+}
+
+@media screen and (max-width: 1000px) {
+  .companies .container {
+    height: 20vh !important;
+  }
+  .companies .pc-version {
+    display: none !important;
+  }
+  .companies .mobile-version {
+    position: relative !important;
+    top: 0px !important;
+    visibility: visible !important;
+  }
+  .companies .mobile-version img {
+    height: 7vh;
+  }
+}/*# sourceMappingURL=second-page.css.map */

@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="css/main.css">
     
     <title>Freebie</title>
@@ -64,7 +69,52 @@
             </div>
         </div>
     </div>
+    <!--second page-->
+    <div class="companies">
+        <div class="container">
+            <p>Trusted by companies like</p>
 
+            <div class="list-of-companies pc-version">
+                <img src="img/second-page-img/company-1.png" alt="">
+                <img src="img/second-page-img/company-2.png" alt="">
+                <img src="img/second-page-img/company-3.png" alt="">
+                <img src="img/second-page-img/company-4.png" alt="">
+                <img src="img/second-page-img/company-5.png" alt="">
+            </div>
+
+            <div class="list-of-companies mobile-version">
+                <div class="swiper companiesSwiper swiperItems">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="img/second-page-img/company-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/second-page-img/company-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/second-page-img/company-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/second-page-img/company-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/second-page-img/company-5.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 </html>
