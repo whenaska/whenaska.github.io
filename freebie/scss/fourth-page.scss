@@ -1,0 +1,130 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+
+.smart-jackpot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        flex-flow: column nowrap;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-around;
+        padding: 4vh 0vh;
+        .title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10vh;
+            h1 {
+                font-size: 40pt;
+            }
+            .lign {
+                margin-left: 3vw;
+                margin-right: 3vw;
+                height: 150px;
+                width: 1px;
+                background-color: #b9b9b8;
+            }
+        }
+        .jackpots {
+            display: flex;
+            flex-direction: row;
+            .img-for-icon {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 4vh;
+                .bg-for-icon {
+                    position: absolute;
+                }
+                .container-for-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 88px;
+                    width: 88px;
+                    .icon {
+                        position: relative;
+                        z-index: 999;
+                    }
+                }
+            }
+            .title-for-icon {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 20pt;
+                    margin-bottom: 2vh;
+                }
+            }
+            .first-jackpot {
+                h2 {
+                    color: $colour-for-icon-red;
+                }
+            }
+            .second-jackpot {
+                margin-left: 5vw;
+                margin-right: 5vw;
+                h2 {
+                    color: $colour-for-icon-blue;
+                }
+            }
+            .third-jackpot {
+                h2 {
+                    color: $colour-for-icon-green;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .smart-jackpot {
+        .container {
+            height: 92vh;
+            .title {
+                text-align: center;
+                flex-direction: column !important;
+                margin-bottom: 2vh !important;
+                h1 {
+                    font-size: 4vh !important;
+                }
+                .lign {
+                    margin: 40px 0px !important;
+                    height: 1px !important;
+                    width: 60vw !important;
+                    background-color: #b9b9b8;
+                }
+            }
+            .jackpots {
+                flex-direction: column !important;
+                text-align: center;
+                justify-content: center;
+                .img-for-icon {
+                    justify-content: center;
+                    margin-bottom: 1vh;
+                    .icon {
+                        height: 5vh;
+                    }
+                    .bg-for-icon, .container-for-icon{
+                        height: 8vh !important;
+                        width: 8vh !important;
+                    }
+                }
+                .title-for-icon {
+                    h2 {
+                        font-size: 3vh !important;
+                    }
+                    p {
+                        margin-bottom: 3vh;
+                    }
+                }
+                .second-jackpot {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
