@@ -1,0 +1,56 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.designed-and-build {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.designed-and-build .container {
+  flex-flow: row nowrap;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+  padding: 6vh 0vh;
+}
+.designed-and-build .container .photo img {
+  max-width: 35vw;
+}
+.designed-and-build .container .main-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
+}
+.designed-and-build .container .main-content h1 {
+  margin-bottom: 3vh;
+}
+.designed-and-build .container .main-content p {
+  margin-bottom: 4vh;
+}
+.designed-and-build .container .main-content button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media screen and (max-width: 1000px) {
+  .designed-and-build .container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .designed-and-build .container .photo img {
+    display: none;
+  }
+  .designed-and-build .container .main-content {
+    margin-top: -100px;
+    margin-left: 0;
+  }
+  .designed-and-build .container .main-content h1 {
+    font-size: 5vh;
+  }
+  .designed-and-build .container .main-content button {
+    font-size: 3vh !important;
+    align-self: center;
+  }
+}/*# sourceMappingURL=fifth-page.css.map */

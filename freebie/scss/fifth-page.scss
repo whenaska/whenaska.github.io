@@ -1,0 +1,61 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+
+.designed-and-build {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        flex-flow: row nowrap;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between;
+        padding: 6vh 0vh;
+        .photo {
+            img {
+                max-width: 35vw;
+            }
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            margin-left: 4vw;
+            h1 {
+                margin-bottom: 3vh;
+            }
+            p {
+                margin-bottom: 4vh;
+            }
+            button {
+                width: max-content;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .designed-and-build {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            .photo {
+                img {
+                    display: none;
+                }
+            }
+            .main-content {
+                margin-top: -100px;
+                margin-left: 0;
+                h1 {
+                    font-size: 5vh;
+                }
+                button {
+                    font-size: 3vh !important;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
