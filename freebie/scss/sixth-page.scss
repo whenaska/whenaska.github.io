@@ -1,0 +1,125 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+
+.reasons-to-use-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        flex-flow: column nowrap;
+        display: flex;
+        align-items: center !important;
+        justify-content: space-around;
+        padding: 4vh 0vh;
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            margin-bottom: 10vh;
+            h1 {
+                margin-bottom: 2vh;
+            }
+        }
+        .list-reasons {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 85%;
+            .first-half, .second-half{
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .img-for-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 4vh;
+                .bg-for-icon {
+                    position: absolute;
+                }
+                .container-for-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 88px;
+                    width: 88px;
+                    .icon {
+                        position: relative;
+                        z-index: 999;
+                    }
+                }
+            }
+            .title-for-icon {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 20pt;
+                    margin-bottom: 2vh;
+                    color: $colour-for-title;
+                    font-weight: $semibold-font;
+                }
+                p {
+                    margin-bottom: 4vh;
+                }
+            }
+            .reason-2, .reason-5 {
+                margin: 0px 2vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .reasons-to-use-app {
+        .container {
+            .title {
+                width: 100% !important;
+                margin-bottom: 4vh !important;
+                h1 {
+                    font-size: 5vh!important;
+                }
+            }
+            .list-reasons {
+                text-align: left;
+                .first-half, .second-half {
+                    flex-direction: column;
+                }
+                .reason {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    .img-for-icon {
+                        justify-content: center;
+                        margin-bottom: 1vh;
+                        .icon {
+                            height: 5vh;
+                        }
+                        .bg-for-icon, .container-for-icon{
+                            height: 8vh !important;
+                            width: 8vh !important;
+                        }
+                    }
+                    .title-for-icon {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 2vh;
+                        h2 {
+                            font-size: 3vh !important;
+                            margin-bottom: 1vh;
+                        }
+                        p {
+                            margin-bottom: 3vh;
+                        }
+                    }
+                }
+                .reason-2, .reason-5 {
+                    margin: 0px !important;
+                }
+            }
+        }
+    }
+}
