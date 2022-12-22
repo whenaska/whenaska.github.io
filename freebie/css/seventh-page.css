@@ -1,0 +1,121 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.ultimate-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/seventh-page-img/telephone-up.png) center right no-repeat, url(../img/seventh-page-img/telephone-down.png) center right 200px no-repeat, url(../img/seventh-page-img/bg-telephone.png) center right no-repeat;
+}
+.ultimate-features .container {
+  flex-flow: row nowrap;
+  display: flex;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 4vh 0vh;
+}
+.ultimate-features .container .text {
+  display: flex;
+  flex-flow: wrap column;
+  align-content: space-between;
+  width: 70%;
+}
+.ultimate-features .container .text .title {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 7vh;
+}
+.ultimate-features .container .text .title h1 {
+  margin-bottom: 2vh;
+}
+.ultimate-features .container .text .list-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+}
+.ultimate-features .container .text .list-features .first-half, .ultimate-features .container .text .list-features .second-half {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.ultimate-features .container .text .list-features .img-for-icon {
+  display: flex;
+  margin-bottom: 4vh;
+}
+.ultimate-features .container .text .list-features .img-for-icon .bg-for-icon {
+  position: absolute;
+}
+.ultimate-features .container .text .list-features .img-for-icon .container-for-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  width: 88px;
+}
+.ultimate-features .container .text .list-features .img-for-icon .container-for-icon .icon {
+  position: relative;
+  z-index: 999;
+}
+.ultimate-features .container .text .list-features .title-for-icon {
+  display: flex;
+  flex-direction: column;
+}
+.ultimate-features .container .text .list-features .title-for-icon h2 {
+  font-size: 20pt;
+  margin-bottom: 2vh;
+  color: #242f51;
+  font-weight: 600;
+}
+.ultimate-features .container .text .list-features .title-for-icon p {
+  margin-bottom: 4vh;
+}
+.ultimate-features .container .text .basic-button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media screen and (max-width: 1400px) {
+  .ultimate-features {
+    background: url(../img/seventh-page-img/telephone-up.png) center right no-repeat, url(../img/seventh-page-img/telephone-down.png) center right 100px no-repeat, url(../img/seventh-page-img/bg-telephone.png) center right no-repeat;
+    background-size: 35%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ultimate-features {
+    background: none;
+  }
+  .ultimate-features .container .text {
+    width: 100% !important;
+  }
+  .ultimate-features .container .text .title {
+    width: 100% !important;
+  }
+  .ultimate-features .container .text .title h1 {
+    font-size: 5vh;
+  }
+  .ultimate-features .container .text .list-features {
+    width: 100% !important;
+  }
+  .ultimate-features .container .text .list-features .feature .img-for-icon {
+    margin-bottom: 1vh;
+  }
+  .ultimate-features .container .text .list-features .feature .img-for-icon .icon {
+    height: 5vh;
+  }
+  .ultimate-features .container .text .list-features .feature .img-for-icon .bg-for-icon, .ultimate-features .container .text .list-features .feature .img-for-icon .container-for-icon {
+    height: 8vh !important;
+    width: 8vh !important;
+  }
+  .ultimate-features .container .text .list-features .feature .title-for-icon h2 {
+    font-size: 3vh !important;
+    margin-bottom: 1vh;
+  }
+  .ultimate-features .container .text .list-features .feature .title-for-icon p {
+    margin-bottom: 3vh;
+  }
+  .ultimate-features .container .text .list-features .feature-1, .ultimate-features .container .text .list-features .feature-3 {
+    margin-right: 2vw;
+  }
+}/*# sourceMappingURL=seventh-page.css.map */
