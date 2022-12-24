@@ -1,0 +1,140 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+.cost-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    .container{
+        text-align: center;
+        flex-flow: column wrap;
+        display: flex;
+        align-items: center !important;
+        align-content: space-between;
+        justify-content: flex-start !important;
+        padding: 4vh 0vh;
+        .title {
+            margin-bottom: 8vh;
+            h1 {
+                margin-bottom: 3vh;
+            }
+        }
+        .swipe-button {
+            margin-bottom: 4vh;
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            height: 46px;
+            padding: 2px 5px;
+            border: 2px solid $border-colour;
+            border-radius: 1000px;
+            .bg-figure {
+                position: absolute;
+                height: 40px;
+                width: 150px;
+                border-radius: 100px;
+                background-color: $btn-bg-colour;
+                transition: all 0.2s;
+            }
+            p {
+                position: relative;
+                width: 50%;
+                font-weight: $bold-font;
+                border: none;
+                background: none;
+                transition: all 0.2s;
+            }
+            .monthly {
+                color: $light-colour;
+            }
+        }
+        .plan-subscribe {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            .subscribe {
+                height: max-content;
+                display: flex;
+                width: 350px;;
+                border: 2px solid $border-colour;
+                border-radius: 9px;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                align-content: space-between;
+                transition: all 0.2s;
+                .title-for-subscribe {
+                    padding: 5%;
+                    width: 90%;
+                    background: rgb(255,255,255);
+                    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(247,250,251,1) 53%, rgba(244,247,249,1) 100%);
+                    border-radius: 9px 9px 0 0;
+                    span {
+                        font-size: 60pt;
+                        font-weight: $semibold-font;
+                        color: $colour-for-title;
+                    }
+                    .secondary-title {
+                        margin-top: 2vh;
+                    }
+                }
+                .list-benefits {
+                    p {
+                        margin-top: 4vh;
+                    }
+                }
+                button {
+                    width: max-content;
+                    margin-bottom: 2vh;
+                    margin-top: 4vh;
+                }
+                .free-period {
+                    margin-bottom: 2vh;
+                }
+            }
+            .active {
+                border: none;
+                box-shadow: 0 0 40px $border-colour;
+                box-shadow: 0 0 40px $border-colour;
+            }
+            .subscribe-monthly {
+                margin-right: 4vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .cost-subscribe {
+        .container {
+            .title {
+                h1 {
+                    font-size: 5vh;
+                }
+            }
+            .swipe-button {
+                width: 70vw;
+                height: 5vh;
+                padding: 10px;
+                .bg-figure {
+                    width: 35vw;
+                    height: 5vh;
+                }
+            }
+            .plan-subscribe {
+                .subscribe {
+                    width: 40vw;
+                    .secondary-title {
+                        font-size: 2vh;
+                    }
+                    .list-benefits {
+                        padding: 0 1vw;
+                    }
+                }
+            }
+        }
+    }
+}

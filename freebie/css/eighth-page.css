@@ -1,0 +1,135 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.cost-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+.cost-subscribe .container {
+  text-align: center;
+  flex-flow: column wrap;
+  display: flex;
+  align-items: center !important;
+  align-content: space-between;
+  justify-content: flex-start !important;
+  padding: 4vh 0vh;
+}
+.cost-subscribe .container .title {
+  margin-bottom: 8vh;
+}
+.cost-subscribe .container .title h1 {
+  margin-bottom: 3vh;
+}
+.cost-subscribe .container .swipe-button {
+  margin-bottom: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 46px;
+  padding: 2px 5px;
+  border: 2px solid #ebebeb;
+  border-radius: 1000px;
+}
+.cost-subscribe .container .swipe-button .bg-figure {
+  position: absolute;
+  height: 40px;
+  width: 150px;
+  border-radius: 100px;
+  background-color: #2500f9;
+  transition: all 0.2s;
+}
+.cost-subscribe .container .swipe-button p {
+  position: relative;
+  width: 50%;
+  font-weight: 700;
+  border: none;
+  background: none;
+  transition: all 0.2s;
+}
+.cost-subscribe .container .swipe-button .monthly {
+  color: #ffffff;
+}
+.cost-subscribe .container .plan-subscribe {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.cost-subscribe .container .plan-subscribe .subscribe {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  width: 350px;
+  border: 2px solid #ebebeb;
+  border-radius: 9px;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  transition: all 0.2s;
+}
+.cost-subscribe .container .plan-subscribe .subscribe .title-for-subscribe {
+  padding: 5%;
+  width: 90%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(247, 250, 251) 53%, rgb(244, 247, 249) 100%);
+  border-radius: 9px 9px 0 0;
+}
+.cost-subscribe .container .plan-subscribe .subscribe .title-for-subscribe span {
+  font-size: 60pt;
+  font-weight: 600;
+  color: #242f51;
+}
+.cost-subscribe .container .plan-subscribe .subscribe .title-for-subscribe .secondary-title {
+  margin-top: 2vh;
+}
+.cost-subscribe .container .plan-subscribe .subscribe .list-benefits p {
+  margin-top: 4vh;
+}
+.cost-subscribe .container .plan-subscribe .subscribe button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+.cost-subscribe .container .plan-subscribe .subscribe .free-period {
+  margin-bottom: 2vh;
+}
+.cost-subscribe .container .plan-subscribe .active {
+  border: none;
+  box-shadow: 0 0 40px #ebebeb;
+  box-shadow: 0 0 40px #ebebeb;
+}
+.cost-subscribe .container .plan-subscribe .subscribe-monthly {
+  margin-right: 4vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .cost-subscribe .container .title h1 {
+    font-size: 5vh;
+  }
+  .cost-subscribe .container .swipe-button {
+    width: 70vw;
+    height: 5vh;
+    padding: 10px;
+  }
+  .cost-subscribe .container .swipe-button .bg-figure {
+    width: 35vw;
+    height: 5vh;
+  }
+  .cost-subscribe .container .plan-subscribe .subscribe {
+    width: 40vw;
+  }
+  .cost-subscribe .container .plan-subscribe .subscribe .secondary-title {
+    font-size: 2vh;
+  }
+  .cost-subscribe .container .plan-subscribe .subscribe .list-benefits {
+    padding: 0 1vw;
+  }
+}/*# sourceMappingURL=eighth-page.css.map */
