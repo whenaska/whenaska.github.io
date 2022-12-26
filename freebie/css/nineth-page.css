@@ -1,0 +1,156 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.testimonila {
+  display: flex;
+  justify-content: center;
+  background: url(../img/nineth-page-img/world-map.png) left center no-repeat;
+  align-items: center;
+  min-height: 70vh;
+}
+.testimonila .container {
+  justify-content: flex-end !important;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding: 4vh 0;
+}
+.testimonila .container .text {
+  display: flex;
+  flex-flow: nowrap column;
+  width: 50vw;
+}
+.testimonila .container .text .title p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.testimonila .container .text .reviews {
+  display: flex;
+  flex-direction: row;
+}
+.testimonila .container .text .reviews .text-review h2 {
+  font-weight: 600;
+  margin: 30px 0px;
+}
+.testimonila .container .text .reviews .swiperItems {
+  display: flex;
+  align-content: space-between;
+}
+.testimonila .container .text .reviews .info-reviewer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testimonila .container .text .reviews .info-reviewer img {
+  height: 90px;
+  width: 90px;
+  border-radius: 100000px;
+}
+.testimonila .container .text .reviews .info-reviewer .text {
+  margin-left: 2vw;
+}
+.testimonila .container .text .reviews .info-reviewer .text h3 {
+  margin-bottom: 10px;
+  color: #242f51;
+  font-weight: 600;
+}
+.testimonila .container .text .reviews .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  position: relative;
+  top: 79%;
+  left: 15%;
+}
+.testimonila .container .text .reviews .buttons .swiper-button-next, .testimonila .container .text .reviews .buttons .swiper-button-prev {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #eff3f8;
+  border-radius: 100px;
+}
+.testimonila .container .text .reviews .buttons .swiper-button-next::after, .testimonila .container .text .reviews .buttons .swiper-button-prev::after {
+  content: "" !important;
+}
+.testimonila .container .text .reviews .buttons .swiper-button-prev {
+  margin-left: -20vw;
+  transform: scale(-1, 1);
+}
+.testimonila .container .text .reviews .buttons .swiper-button-next {
+  margin-right: -10vw;
+}
+.testimonila .container .text .reviews .buttons .swiper-button-next img, .testimonila .container .text .reviews .buttons .swiper-button-prev img {
+  height: 30px;
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(94%) saturate(6728%) hue-rotate(254deg) brightness(95%) contrast(156%);
+}
+.testimonila .container .text .reviews .buttons .vertical-lign {
+  margin: 0 10px;
+  height: 30px;
+  width: 2px;
+  background-color: #eff3f8;
+}
+.testimonila .container .text .reviews .buttons .swiper-button-disabled {
+  background: none;
+  background-color: #ffffff;
+  opacity: 1 !important;
+  border: 3px solid #eff3f8;
+  height: 44px;
+  width: 44px;
+}
+.testimonila .container .text .reviews .buttons .swiper-button-disabled img {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(5%) saturate(891%) hue-rotate(190deg) brightness(102%) contrast(80%);
+}
+.testimonila .container .text .reviews .swiper-pagination {
+  visibility: hidden;
+  top: -100000vh;
+}
+.testimonila .container .text .reviews .swiper-pagination-bullet {
+  height: 20px;
+  width: 20px;
+}
+.testimonila .container .text .reviews .swiper-pagination-bullet-active {
+  background: #2500f9;
+}
+
+@media screen and (max-width: 1000px) {
+  .testimonila {
+    background: url(../img/nineth-page-img/world-map.png) center center no-repeat;
+  }
+  .testimonila .container .text {
+    width: 90vw;
+  }
+  .testimonila .container .text .title h1 {
+    font-size: 5vh;
+  }
+  .testimonila .container .text .reviews .text-review img {
+    width: 30vw;
+    height: auto;
+  }
+  .testimonila .container .text .reviews .text-review h2 {
+    font-size: 3vh;
+  }
+  .testimonila .container .text .reviews .info-reviewer {
+    margin-bottom: 60px;
+  }
+  .testimonila .container .text .reviews .info-reviewer img {
+    width: 150px;
+    height: 150px;
+  }
+  .testimonila .container .text .reviews .info-reviewer h3 {
+    font-size: 3vh;
+  }
+  .testimonila .container .text .reviews .buttons {
+    display: none;
+  }
+  .testimonila .container .text .reviews .swiper-pagination {
+    visibility: visible;
+    top: auto;
+  }
+}/*# sourceMappingURL=nineth-page.css.map */

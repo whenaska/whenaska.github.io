@@ -3,5 +3,7 @@ let swiper = new Swiper(".swiperItems", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    }
 });
