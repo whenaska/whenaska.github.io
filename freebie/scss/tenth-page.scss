@@ -1,0 +1,81 @@
+@import 'font-settings.scss';
+@import 'colours.scss';
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:4vh 0 ;
+        .title {
+            text-align: center;
+            width: 50vw;
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
+        .questions-answers {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            margin-top: 60px;
+            width: 100%;
+            .question {
+                width: 100%;
+                margin-top: 10px;
+                .text-question {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 20px 50px;
+                    background-color: $color-for-swiper;
+                    h2 {
+                        font-weight: $medium;
+                    }
+                    .plus, .minus {
+                        font-size: 20pt;
+                        color: $colour-for-title;
+                    }
+                    .close {
+                        visibility: collapse;
+                        display: none;
+                    }
+                    .open {
+                        visibility: visible;
+                        display: flex;
+                    }
+                }
+                .answer {
+                    visibility: collapse;
+                    display: none;
+                    padding: 20px 50px;
+                }
+                .open-answer {
+                    visibility: visible;
+                    display: flex;
+                    background-color: $color-for-swiper;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .faq {
+        .container {
+            .title {
+                width: 90%;
+                h1 {
+                    font-size: 5vh;
+                }
+            }
+            .question {
+                h2, .plus, .minus {
+                    font-size: 3vh !important;
+                }
+            }
+        }
+    }
+}

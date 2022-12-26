@@ -1,0 +1,76 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 0;
+}
+.faq .container .title {
+  text-align: center;
+  width: 50vw;
+}
+.faq .container .title h1 {
+  margin-bottom: 20px;
+}
+.faq .container .questions-answers {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 60px;
+  width: 100%;
+}
+.faq .container .questions-answers .question {
+  width: 100%;
+  margin-top: 10px;
+}
+.faq .container .questions-answers .question .text-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #eff3f8;
+}
+.faq .container .questions-answers .question .text-question h2 {
+  font-weight: 500;
+}
+.faq .container .questions-answers .question .text-question .plus, .faq .container .questions-answers .question .text-question .minus {
+  font-size: 20pt;
+  color: #242f51;
+}
+.faq .container .questions-answers .question .text-question .close {
+  visibility: collapse;
+  display: none;
+}
+.faq .container .questions-answers .question .text-question .open {
+  visibility: visible;
+  display: flex;
+}
+.faq .container .questions-answers .question .answer {
+  visibility: collapse;
+  display: none;
+  padding: 20px 50px;
+}
+.faq .container .questions-answers .question .open-answer {
+  visibility: visible;
+  display: flex;
+  background-color: #eff3f8;
+}
+
+@media screen and (max-width: 1000px) {
+  .faq .container .title {
+    width: 90%;
+  }
+  .faq .container .title h1 {
+    font-size: 5vh;
+  }
+  .faq .container .question h2, .faq .container .question .plus, .faq .container .question .minus {
+    font-size: 3vh !important;
+  }
+}/*# sourceMappingURL=tenth-page.css.map */
