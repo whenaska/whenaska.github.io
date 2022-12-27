@@ -1,0 +1,76 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #09142e url(../img/twelfth-page-img/bg-top.png) top right no-repeat;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 0;
+}
+.footer .container .content {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.footer .container .content .logo {
+  margin-top: 50px;
+}
+.footer .container .content .logo p {
+  color: #fcae61;
+  font-weight: 700;
+  font-size: 4vh;
+}
+.footer .container .content .logo span {
+  color: #ffffff;
+}
+.footer .container .content .navigation {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.footer .container .content .navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .content .navigation ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.footer .container .content .navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+}
+.footer .container .content .navigation ul .last-navigation-item {
+  margin-right: 0px;
+}
+.footer .container .content .social-media img {
+  height: 40px;
+  width: auto;
+  filter: invert(10%) sepia(5%) saturate(6700%) hue-rotate(184deg) brightness(95%) contrast(79%);
+}
+.footer .container .content .social-media img:hover {
+  filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(248deg) brightness(107%) contrast(100%);
+}
+.footer .container .content .copyright {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.footer .container .content .copyright p {
+  font-size: 10pt;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .container .social-media img {
+    height: 80px !important;
+    width: auto;
+  }
+}/*# sourceMappingURL=twelfth-page.css.map */

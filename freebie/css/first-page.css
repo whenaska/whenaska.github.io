@@ -109,13 +109,13 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .navigation-item button {
+  .best-app .navigation-item button {
     display: none;
   }
-  .navigation-item a {
+  .best-app .navigation-item a {
     display: none;
   }
-  .logo .icon {
+  .best-app .logo .icon {
     visibility: visible !important;
     justify-self: end;
   }

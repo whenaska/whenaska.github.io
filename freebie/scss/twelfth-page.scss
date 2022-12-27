@@ -1,0 +1,81 @@
+@import 'font-settings.scss';
+@import 'colours.scss'; 
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: $bg-for-footer url(../img/twelfth-page-img/bg-top.png) top right no-repeat;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4vh 0;
+        .content {
+            width: max-content;
+            .logo {
+                margin-top: 50px;
+                p {
+                    color: $logo-colour;
+                    font-weight: $bold-font;
+                    font-size: 4vh;
+                }
+                span {
+                    color: $light-colour;
+                }
+            }
+            .navigation {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                align-items: center;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                        a {
+                            color: $light-colour;
+                            text-decoration: none;
+                            align-items: center;
+                        }
+                    }
+                    .last-navigation-item {
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .social-media {
+                img {
+                    height: 40px;
+                    width: auto;
+                    filter: invert(10%) sepia(5%) saturate(6700%) hue-rotate(184deg) brightness(95%) contrast(79%);
+                }
+                img:hover {
+                    filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(248deg) brightness(107%) contrast(100%);
+                }
+            }
+            .copyright {
+                margin-top: 90px;
+                margin-bottom: 50px;
+                p {
+                    font-size: 10pt;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        .container {
+            .social-media {
+                img {
+                    height: 80px !important; width: auto;
+                }
+            }
+        }
+    }
+}
