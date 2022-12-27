@@ -1,0 +1,47 @@
+/*font-settings*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*colours*/
+.dowland-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/eleventh-page-img/man-walk.png) bottom right no-repeat;
+  min-height: 420px;
+}
+.dowland-app .container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4vh 0;
+}
+.dowland-app .container .main-content {
+  width: 40vw;
+}
+.dowland-app .container .main-content .title h1 {
+  font-size: 48pt;
+}
+.dowland-app .container .main-content .title p {
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.dowland-app .container .main-content .platforms .google {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .dowland-app .container {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .dowland-app .container .main-content {
+    width: 90%;
+  }
+  .dowland-app .container .main-content .title h1 {
+    font-size: 5vh;
+  }
+  .dowland-app .container .main-content .platforms img {
+    margin-top: 40px;
+    width: 300px !important;
+    height: auto;
+  }
+}/*# sourceMappingURL=eleventh-page.css.map */

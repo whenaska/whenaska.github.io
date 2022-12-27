@@ -1,0 +1,56 @@
+@import 'font-settings.scss';
+@import 'colours.scss'; 
+
+.dowland-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/eleventh-page-img/man-walk.png) bottom right no-repeat;
+    min-height: 420px;
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 4vh 0;
+        .main-content {
+            width: 40vw;
+            .title {
+                h1 {
+                    font-size: 48pt;
+                }
+                p {
+                    margin-bottom: 50px;
+                    margin-top: 40px;
+                }
+            }
+            .platforms {
+                .google {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .dowland-app {
+        .container {
+            background-color: rgba(255,255,255,0.8);
+            .main-content {
+                width: 90%;
+                .title {
+                    h1 {
+                        font-size: 5vh;
+                    }
+                }
+                .platforms {
+                    img {
+                        margin-top: 40px;
+                        width: 300px !important;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
