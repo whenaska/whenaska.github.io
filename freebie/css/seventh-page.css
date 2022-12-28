@@ -8,8 +8,8 @@
   background: url(../img/seventh-page-img/telephone-up.png) center right no-repeat, url(../img/seventh-page-img/telephone-down.png) center right 200px no-repeat, url(../img/seventh-page-img/bg-telephone.png) center right no-repeat;
 }
 .ultimate-features .container {
-  flex-flow: row nowrap;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center !important;
   justify-content: flex-start !important;
   padding: 4vh 0vh;
@@ -26,7 +26,7 @@
   width: 50%;
   margin-bottom: 7vh;
 }
-.ultimate-features .container .text .title h1 {
+.ultimate-features .container .text .title .primary-title {
   margin-bottom: 2vh;
 }
 .ultimate-features .container .text .list-features {
@@ -39,35 +39,14 @@
   display: flex;
   flex-flow: row nowrap;
 }
-.ultimate-features .container .text .list-features .img-for-icon {
-  display: flex;
-  margin-bottom: 4vh;
-}
-.ultimate-features .container .text .list-features .img-for-icon .bg-for-icon {
-  position: absolute;
-}
-.ultimate-features .container .text .list-features .img-for-icon .container-for-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 88px;
-  width: 88px;
-}
-.ultimate-features .container .text .list-features .img-for-icon .container-for-icon .icon {
-  position: relative;
-  z-index: 999;
-}
-.ultimate-features .container .text .list-features .title-for-icon {
-  display: flex;
+.ultimate-features .container .text .list-features .align-icon {
   flex-direction: column;
 }
-.ultimate-features .container .text .list-features .title-for-icon h2 {
-  font-size: 20pt;
-  margin-bottom: 2vh;
-  color: #242f51;
+.ultimate-features .container .text .list-features .align-icon .title-for-icon .secondary-title {
   font-weight: 600;
+  color: #242f51;
 }
-.ultimate-features .container .text .list-features .title-for-icon p {
+.ultimate-features .container .text .list-features .align-icon .title-for-icon p {
   margin-bottom: 4vh;
 }
 .ultimate-features .container .text .basic-button {
@@ -92,27 +71,16 @@
   .ultimate-features .container .text .title {
     width: 100% !important;
   }
-  .ultimate-features .container .text .title h1 {
-    font-size: 5vh;
-  }
   .ultimate-features .container .text .list-features {
     width: 100% !important;
   }
-  .ultimate-features .container .text .list-features .feature .img-for-icon {
+  .ultimate-features .container .text .list-features .align-icon .img-for-icon {
     margin-bottom: 1vh;
   }
-  .ultimate-features .container .text .list-features .feature .img-for-icon .icon {
-    height: 5vh;
-  }
-  .ultimate-features .container .text .list-features .feature .img-for-icon .bg-for-icon, .ultimate-features .container .text .list-features .feature .img-for-icon .container-for-icon {
-    height: 8vh !important;
-    width: 8vh !important;
-  }
-  .ultimate-features .container .text .list-features .feature .title-for-icon h2 {
-    font-size: 3vh !important;
+  .ultimate-features .container .text .list-features .align-icon .title-for-icon h2 {
     margin-bottom: 1vh;
   }
-  .ultimate-features .container .text .list-features .feature .title-for-icon p {
+  .ultimate-features .container .text .list-features .align-icon .title-for-icon p {
     margin-bottom: 3vh;
   }
   .ultimate-features .container .text .list-features .feature-1, .ultimate-features .container .text .list-features .feature-3 {

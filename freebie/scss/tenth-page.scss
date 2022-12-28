@@ -12,7 +12,7 @@
         .title {
             text-align: center;
             width: 50vw;
-            h1 {
+            .primary-title {
                 margin-bottom: 20px;
             }
         }
@@ -20,8 +20,8 @@
             display: flex;
             flex-direction: column;
             justify-self: center;
-            margin-top: 60px;
             width: 100%;
+            margin-top: 60px;
             .question {
                 width: 100%;
                 margin-top: 10px;
@@ -31,7 +31,7 @@
                     justify-content: space-between;
                     padding: 20px 50px;
                     background-color: $color-for-swiper;
-                    h2 {
+                    .secondary-title {
                         font-weight: $medium;
                     }
                     .plus, .minus {
@@ -39,22 +39,22 @@
                         color: $colour-for-title;
                     }
                     .close {
-                        visibility: collapse;
                         display: none;
+                        visibility: collapse;
                     }
                     .open {
-                        visibility: visible;
                         display: flex;
+                        visibility: visible;
                     }
                 }
                 .answer {
-                    visibility: collapse;
                     display: none;
+                    visibility: collapse;
                     padding: 20px 50px;
                 }
                 .open-answer {
-                    visibility: visible;
                     display: flex;
+                    visibility: visible;
                     background-color: $color-for-swiper;
                 }
             }
@@ -67,12 +67,9 @@
         .container {
             .title {
                 width: 90%;
-                h1 {
-                    font-size: 5vh;
-                }
             }
             .question {
-                h2, .plus, .minus {
+                .plus, .minus {
                     font-size: 3vh !important;
                 }
             }

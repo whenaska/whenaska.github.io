@@ -3,7 +3,6 @@
 
 .awesome-features {
     display: flex;
-    margin-top: 5vh;
     align-items: center;
     justify-content: center;
     .container{
@@ -11,18 +10,17 @@
         display: flex;
         align-items: center !important;
         justify-content: space-between;
-        height: 92vh;
         padding: 4vh 0vh;
         .phone {
             .bg-smartphone {
+                position: absolute;
                 max-height: 80vh;
                 margin-top: 10vh;
                 left: 8%;
-                position: absolute;
             }
             .smartphone {
-                max-height: 80vh;
                 position: relative;
+                max-height: 80vh;
                 z-index: 10000;
             }
         }
@@ -32,52 +30,33 @@
             align-content: space-between;
             align-items: center;
             .title {
-                h1 {
+                .primary-title {
                     margin-bottom: 3vh;
                 }
                 p {
                     margin-bottom: 10vh;
                 }
             }
-            .feature {
-                display: flex;
+            .align-icon {
                 flex-direction: row;
                 margin-bottom: 7vh;
-                .img-for-icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .bg-for-icon {
-                        position: absolute;
-                    }
-                    .icon {
-                        position: relative;
-                        z-index: 999;
-                    }
-                }
                 .title-for-icon {
                     margin-left: 2vw;
-                    display: flex;
-                    flex-direction: column;
-                    h2 {
-                        font-size: 20pt;
-                        margin-bottom: 2vh;
-                    }
                 }
                 
             }
             .first-feature {
-                h2 {
+                .secondary-title {
                     color: $colour-for-icon-red;
                 }
             }
             .second-feature {
-                h2 {
+                .secondary-title {
                     color: $colour-for-icon-blue;
                 }
             }
             .third-feature {
-                h2 {
+                .secondary-title {
                     color: $colour-for-icon-green;
                 }
             }
@@ -107,23 +86,9 @@
                     display: none !important;
                 }
             }
-            .title {
-                h1 {
-                    font-size: 5vh;
-                }
-            }
-            .feature {
+            .align-icon {
                 .title-for-icon {
                     margin-left: 5vw !important;
-                    h2 {
-                        font-size: 3vh !important;
-                    }
-                }
-                .icon {
-                    height: 5vh;
-                }
-                .bg-for-icon {
-                    height: 8vh;
                 }
             }
         }

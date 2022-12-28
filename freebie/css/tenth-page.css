@@ -16,15 +16,15 @@
   text-align: center;
   width: 50vw;
 }
-.faq .container .title h1 {
+.faq .container .title .primary-title {
   margin-bottom: 20px;
 }
 .faq .container .questions-answers {
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-top: 60px;
   width: 100%;
+  margin-top: 60px;
 }
 .faq .container .questions-answers .question {
   width: 100%;
@@ -37,7 +37,7 @@
   padding: 20px 50px;
   background-color: #eff3f8;
 }
-.faq .container .questions-answers .question .text-question h2 {
+.faq .container .questions-answers .question .text-question .secondary-title {
   font-weight: 500;
 }
 .faq .container .questions-answers .question .text-question .plus, .faq .container .questions-answers .question .text-question .minus {
@@ -45,21 +45,21 @@
   color: #242f51;
 }
 .faq .container .questions-answers .question .text-question .close {
-  visibility: collapse;
   display: none;
+  visibility: collapse;
 }
 .faq .container .questions-answers .question .text-question .open {
-  visibility: visible;
   display: flex;
+  visibility: visible;
 }
 .faq .container .questions-answers .question .answer {
-  visibility: collapse;
   display: none;
+  visibility: collapse;
   padding: 20px 50px;
 }
 .faq .container .questions-answers .question .open-answer {
-  visibility: visible;
   display: flex;
+  visibility: visible;
   background-color: #eff3f8;
 }
 
@@ -67,10 +67,7 @@
   .faq .container .title {
     width: 90%;
   }
-  .faq .container .title h1 {
-    font-size: 5vh;
-  }
-  .faq .container .question h2, .faq .container .question .plus, .faq .container .question .minus {
+  .faq .container .question .plus, .faq .container .question .minus {
     font-size: 3vh !important;
   }
 }/*# sourceMappingURL=tenth-page.css.map */

@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/eleventh-page-img/man-walk.png) bottom right no-repeat;
   min-height: 420px;
+  background: url(../img/eleventh-page-img/man-walk.png) bottom right no-repeat;
 }
 .dowland-app .container {
   display: flex;
@@ -18,7 +18,7 @@
 .dowland-app .container .main-content {
   width: 40vw;
 }
-.dowland-app .container .main-content .title h1 {
+.dowland-app .container .main-content .title .primary-title {
   font-size: 48pt;
 }
 .dowland-app .container .main-content .title p {
@@ -35,9 +35,6 @@
   }
   .dowland-app .container .main-content {
     width: 90%;
-  }
-  .dowland-app .container .main-content .title h1 {
-    font-size: 5vh;
   }
   .dowland-app .container .main-content .platforms img {
     margin-top: 40px;

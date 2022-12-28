@@ -4,9 +4,9 @@
 .testimonila {
   display: flex;
   justify-content: center;
-  background: url(../img/nineth-page-img/world-map.png) left center no-repeat;
   align-items: center;
   min-height: 70vh;
+  background: url(../img/nineth-page-img/world-map.png) left center no-repeat;
 }
 .testimonila .container {
   justify-content: flex-end !important;
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: row;
 }
-.testimonila .container .text .reviews .text-review h2 {
+.testimonila .container .text .reviews .text-review .secondary-title {
   font-weight: 600;
   margin: 30px 0px;
 }
@@ -36,10 +36,10 @@
   align-content: space-between;
 }
 .testimonila .container .text .reviews .info-reviewer {
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 40px;
 }
 .testimonila .container .text .reviews .info-reviewer img {
   height: 90px;
@@ -126,15 +126,9 @@
   .testimonila .container .text {
     width: 90vw;
   }
-  .testimonila .container .text .title h1 {
-    font-size: 5vh;
-  }
   .testimonila .container .text .reviews .text-review img {
     width: 30vw;
     height: auto;
-  }
-  .testimonila .container .text .reviews .text-review h2 {
-    font-size: 3vh;
   }
   .testimonila .container .text .reviews .info-reviewer {
     margin-bottom: 60px;
@@ -144,7 +138,7 @@
     height: 150px;
   }
   .testimonila .container .text .reviews .info-reviewer h3 {
-    font-size: 3vh;
+    font-size: 2.3vh;
   }
   .testimonila .container .text .reviews .buttons {
     display: none;

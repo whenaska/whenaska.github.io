@@ -11,8 +11,8 @@
   background: url(../img/first-page-img/bg-little-x-o.png) center center no-repeat, url(../img/first-page-img/bg-little-0-romb.png) left center no-repeat, url(../img/first-page-img/bg-town.png) center bottom repeat-x;
 }
 .best-app .img-phone img {
-  height: auto;
   max-height: 70vh;
+  height: auto;
   width: auto;
 }
 .best-app .navigation {
@@ -27,9 +27,9 @@
   align-items: center;
 }
 .best-app .navigation .logo p {
+  font-size: 4vh;
   color: #fcae61;
   font-weight: 700;
-  font-size: 4vh;
 }
 .best-app .navigation .logo span {
   color: #242f51;
@@ -42,9 +42,9 @@
   height: 40px;
 }
 .best-app .navigation .logo .icon .line-for-navbar {
-  background-color: #2563ff;
   height: 5px;
   width: 60px;
+  background-color: #2563ff;
 }
 .best-app .navigation .navigation-items {
   align-items: center;
@@ -59,9 +59,8 @@
   align-items: center;
 }
 .best-app .navigation .navigation-items ul li a {
-  color: #242f51 !important;
-  text-decoration: none;
   align-items: center;
+  color: #242f51 !important;
 }
 .best-app .main-content {
   display: flex;
@@ -87,8 +86,8 @@
 }
 .best-app .main-content .text .reward .reward-text {
   padding: 7.5px 50px;
-  border-radius: 100px;
   font-size: 18pt;
+  border-radius: 100px;
   color: #242f51;
   background-color: #e2eaed;
 }
@@ -96,8 +95,8 @@
   margin-top: 30px;
 }
 .best-app .main-content .text .title .primary-title {
-  font-size: 6vh;
   margin-bottom: 40px;
+  font-size: 6vh;
 }
 .best-app .main-content .text .buttons {
   margin-top: 40px;
@@ -128,7 +127,7 @@
     display: flex;
     text-align: center;
   }
-  .best-app .navigation-items.responsive button {
+  .best-app .navigation-items.responsive .basic-button {
     display: flex;
     text-align: center;
   }
@@ -140,20 +139,20 @@
   }
   .best-app .navigation .logo {
     display: flex;
+    flex-direction: row;
     justify-content: space-between !important;
     width: 80vw;
-    flex-direction: row;
   }
   .best-app .navigation .navigation-items {
     align-items: center;
     width: 100% !important;
   }
   .best-app .navigation .navigation-items ul {
-    z-index: 999;
     position: absolute;
     justify-content: space-evenly !important;
     flex-direction: column;
     align-items: center;
+    z-index: 999;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.863);
   }
@@ -162,13 +161,15 @@
     align-items: center;
   }
   .best-app .navigation .navigation-items ul li a {
-    color: #242f51 !important;
-    text-decoration: none;
     align-items: center;
+    color: #242f51 !important;
   }
   .best-app .main-content {
     align-self: center;
     height: 90vh;
+  }
+  .best-app .main-content .title .primary-title {
+    font-size: 5vh !important;
   }
   .best-app .main-content .reward {
     margin-bottom: 2vh;

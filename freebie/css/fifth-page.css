@@ -21,7 +21,7 @@
   flex-direction: column;
   margin-left: 4vw;
 }
-.designed-and-build .container .main-content h1 {
+.designed-and-build .container .main-content .primary-title {
   margin-bottom: 3vh;
 }
 .designed-and-build .container .main-content p {
@@ -45,9 +45,6 @@
   .designed-and-build .container .main-content {
     margin-top: -100px;
     margin-left: 0;
-  }
-  .designed-and-build .container .main-content h1 {
-    font-size: 5vh;
   }
   .designed-and-build .container .main-content button {
     font-size: 3vh !important;

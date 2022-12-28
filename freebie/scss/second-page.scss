@@ -2,31 +2,30 @@
 @import 'colours.scss';
 
 .companies {
-    margin-top: 4vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 4vh 0vh;
     .container{
         display: flex;
         text-align: center;
         align-items: center !important;
         justify-content: center;
-        height: 30vh;
         p {
-            color: $colour-for-title !important;
             margin-bottom: 4vh;
+            color: $colour-for-title !important;
         }
         .list-of-companies {
-            width: 80%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 80%;
         }
         .mobile-version {
             position: absolute;
-            top: -1000000vh;
             visibility: hidden;
+            top: -1000000vh;
             .swiper-button-next, .swiper-button-prev {
                 color: $btn-bg-colour;
             }
@@ -44,8 +43,8 @@
         }
         .mobile-version {
             position: relative !important;
-            top: 0px !important;
             visibility: visible !important;
+            top: 0px !important;
             img {
                 height: 7vh;
             }

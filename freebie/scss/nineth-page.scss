@@ -4,9 +4,9 @@
 .testimonila {
     display: flex;
     justify-content: center;
-    background: url(../img/nineth-page-img/world-map.png) left center no-repeat;
     align-items: center;
     min-height: 70vh;
+    background: url(../img/nineth-page-img/world-map.png) left center no-repeat;
     .container {
         justify-content: flex-end !important;
         align-content: flex-end;
@@ -26,7 +26,7 @@
                 display: flex;
                 flex-direction: row;
                 .text-review {
-                    h2 {
+                    .secondary-title {
                         font-weight: $semibold-font;
                         margin: 30px 0px;
                     }
@@ -36,10 +36,10 @@
                     align-content: space-between;
                 }
                 .info-reviewer {
-                    margin-top: 40px;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    margin-top: 40px;
                     img {
                         height: 90px;
                         width: 90px;
@@ -128,19 +128,11 @@
         .container {
             .text {
                 width: 90vw;
-                .title {
-                    h1 {
-                        font-size: 5vh;
-                    }
-                }
                 .reviews {
                     .text-review {
                         img {
                             width: 30vw;
                             height: auto;
-                        }
-                        h2 {
-                            font-size: 3vh;
                         }
                     }
                     .info-reviewer {
@@ -150,7 +142,7 @@
                             height: 150px;
                         }
                         h3 {
-                            font-size: 3vh;
+                            font-size: 2.3vh;
                         }
                     }
                     .buttons {

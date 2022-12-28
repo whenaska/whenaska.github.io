@@ -7,8 +7,8 @@
   justify-content: center;
 }
 .smart-jackpot .container {
-  flex-flow: column nowrap;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center !important;
   justify-content: space-around;
   padding: 4vh 0vh;
@@ -20,7 +20,7 @@
   align-items: center;
   margin-bottom: 10vh;
 }
-.smart-jackpot .container .title h1 {
+.smart-jackpot .container .title .primary-title {
   font-size: 40pt;
 }
 .smart-jackpot .container .title .lign {
@@ -34,45 +34,20 @@
   display: flex;
   flex-direction: row;
 }
-.smart-jackpot .container .jackpots .img-for-icon {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 4vh;
-}
-.smart-jackpot .container .jackpots .img-for-icon .bg-for-icon {
-  position: absolute;
-}
-.smart-jackpot .container .jackpots .img-for-icon .container-for-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 88px;
-  width: 88px;
-}
-.smart-jackpot .container .jackpots .img-for-icon .container-for-icon .icon {
-  position: relative;
-  z-index: 999;
-}
-.smart-jackpot .container .jackpots .title-for-icon {
-  display: flex;
+.smart-jackpot .container .jackpots .align-icon {
   flex-direction: column;
 }
-.smart-jackpot .container .jackpots .title-for-icon h2 {
-  font-size: 20pt;
-  margin-bottom: 2vh;
-}
-.smart-jackpot .container .jackpots .first-jackpot h2 {
+.smart-jackpot .container .jackpots .first-jackpot .secondary-title {
   color: #f55767;
 }
 .smart-jackpot .container .jackpots .second-jackpot {
   margin-left: 5vw;
   margin-right: 5vw;
 }
-.smart-jackpot .container .jackpots .second-jackpot h2 {
+.smart-jackpot .container .jackpots .second-jackpot .secondary-title {
   color: #2563ff;
 }
-.smart-jackpot .container .jackpots .third-jackpot h2 {
+.smart-jackpot .container .jackpots .third-jackpot .secondary-title {
   color: #40975f;
 }
 
@@ -81,39 +56,26 @@
     height: 92vh;
   }
   .smart-jackpot .container .title {
-    text-align: center;
     flex-direction: column !important;
+    text-align: center;
     margin-bottom: 2vh !important;
   }
-  .smart-jackpot .container .title h1 {
-    font-size: 4vh !important;
-  }
   .smart-jackpot .container .title .lign {
-    margin: 40px 0px !important;
-    height: 1px !important;
     width: 60vw !important;
+    height: 1px !important;
+    margin: 40px 0px !important;
     background-color: #b9b9b8;
   }
   .smart-jackpot .container .jackpots {
     flex-direction: column !important;
-    text-align: center;
     justify-content: center;
+    text-align: center;
   }
-  .smart-jackpot .container .jackpots .img-for-icon {
+  .smart-jackpot .container .jackpots .align-icon .img-for-icon {
     justify-content: center;
     margin-bottom: 1vh;
   }
-  .smart-jackpot .container .jackpots .img-for-icon .icon {
-    height: 5vh;
-  }
-  .smart-jackpot .container .jackpots .img-for-icon .bg-for-icon, .smart-jackpot .container .jackpots .img-for-icon .container-for-icon {
-    height: 8vh !important;
-    width: 8vh !important;
-  }
-  .smart-jackpot .container .jackpots .title-for-icon h2 {
-    font-size: 3vh !important;
-  }
-  .smart-jackpot .container .jackpots .title-for-icon p {
+  .smart-jackpot .container .jackpots .align-icon .title-for-icon p {
     margin-bottom: 3vh;
   }
   .smart-jackpot .container .jackpots .second-jackpot {

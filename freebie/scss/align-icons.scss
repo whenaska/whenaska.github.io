@@ -1,0 +1,46 @@
+.align-icon {
+    display: flex;
+    .img-for-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 4vh;
+        .bg-for-icon {
+            position: absolute;
+        }
+        .container-for-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 88px;
+            width: 88px;
+            .icon {
+                position: relative;
+                z-index: 999;
+            }
+        }
+    }
+    .title-for-icon {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 20pt;
+            margin-bottom: 2vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .align-icon {
+        .bg-for-icon {
+            height: 8vh;
+        }
+        .container-for-icon {
+            height: 8vh !important;
+            width: 8vh !important;
+            .icon {
+                height: 5vh;
+            }
+        }
+    }
+}

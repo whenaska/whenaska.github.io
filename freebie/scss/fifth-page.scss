@@ -20,7 +20,7 @@
             display: flex;
             flex-direction: column;
             margin-left: 4vw;
-            h1 {
+            .primary-title {
                 margin-bottom: 3vh;
             }
             p {
@@ -48,9 +48,6 @@
             .main-content {
                 margin-top: -100px;
                 margin-left: 0;
-                h1 {
-                    font-size: 5vh;
-                }
                 button {
                     font-size: 3vh !important;
                     align-self: center;

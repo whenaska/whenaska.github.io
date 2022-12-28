@@ -1,0 +1,44 @@
+.align-icon {
+  display: flex;
+}
+.align-icon .img-for-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+.align-icon .img-for-icon .bg-for-icon {
+  position: absolute;
+}
+.align-icon .img-for-icon .container-for-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  width: 88px;
+}
+.align-icon .img-for-icon .container-for-icon .icon {
+  position: relative;
+  z-index: 999;
+}
+.align-icon .title-for-icon {
+  display: flex;
+  flex-direction: column;
+}
+.align-icon .title-for-icon h2 {
+  font-size: 20pt;
+  margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .align-icon .bg-for-icon {
+    height: 8vh;
+  }
+  .align-icon .container-for-icon {
+    height: 8vh !important;
+    width: 8vh !important;
+  }
+  .align-icon .container-for-icon .icon {
+    height: 5vh;
+  }
+}/*# sourceMappingURL=align-icons.css.map */

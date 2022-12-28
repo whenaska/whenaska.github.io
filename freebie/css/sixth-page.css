@@ -7,8 +7,8 @@
   justify-content: center;
 }
 .reasons-to-use-app .container {
-  flex-flow: column nowrap;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center !important;
   justify-content: space-around;
   padding: 4vh 0vh;
@@ -22,51 +22,31 @@
   width: 50%;
   margin-bottom: 10vh;
 }
-.reasons-to-use-app .container .title h1 {
+.reasons-to-use-app .container .title .primary-title {
   margin-bottom: 2vh;
 }
 .reasons-to-use-app .container .list-reasons {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   width: 85%;
 }
 .reasons-to-use-app .container .list-reasons .first-half, .reasons-to-use-app .container .list-reasons .second-half {
   display: flex;
   flex-flow: row nowrap;
 }
-.reasons-to-use-app .container .list-reasons .img-for-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4vh;
-}
-.reasons-to-use-app .container .list-reasons .img-for-icon .bg-for-icon {
-  position: absolute;
-}
-.reasons-to-use-app .container .list-reasons .img-for-icon .container-for-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 88px;
-  width: 88px;
-}
-.reasons-to-use-app .container .list-reasons .img-for-icon .container-for-icon .icon {
-  position: relative;
-  z-index: 999;
-}
-.reasons-to-use-app .container .list-reasons .title-for-icon {
-  display: flex;
+.reasons-to-use-app .container .list-reasons .align-icon {
   flex-direction: column;
 }
-.reasons-to-use-app .container .list-reasons .title-for-icon h2 {
-  font-size: 20pt;
-  margin-bottom: 2vh;
+.reasons-to-use-app .container .list-reasons .align-icon .img-for-icon {
+  justify-content: center;
+}
+.reasons-to-use-app .container .list-reasons .align-icon .title-for-icon .secondary-title {
   color: #242f51;
   font-weight: 600;
 }
-.reasons-to-use-app .container .list-reasons .title-for-icon p {
+.reasons-to-use-app .container .list-reasons .align-icon .title-for-icon p {
   margin-bottom: 4vh;
 }
 .reasons-to-use-app .container .list-reasons .reason-2, .reasons-to-use-app .container .list-reasons .reason-5 {
@@ -78,41 +58,29 @@
     width: 100% !important;
     margin-bottom: 4vh !important;
   }
-  .reasons-to-use-app .container .title h1 {
-    font-size: 5vh !important;
-  }
   .reasons-to-use-app .container .list-reasons {
     text-align: left;
   }
   .reasons-to-use-app .container .list-reasons .first-half, .reasons-to-use-app .container .list-reasons .second-half {
     flex-direction: column;
   }
-  .reasons-to-use-app .container .list-reasons .reason {
-    display: flex;
+  .reasons-to-use-app .container .list-reasons .align-icon {
     flex-direction: row;
     align-items: flex-start;
   }
-  .reasons-to-use-app .container .list-reasons .reason .img-for-icon {
+  .reasons-to-use-app .container .list-reasons .align-icon .img-for-icon {
     justify-content: center;
     margin-bottom: 1vh;
   }
-  .reasons-to-use-app .container .list-reasons .reason .img-for-icon .icon {
-    height: 5vh;
-  }
-  .reasons-to-use-app .container .list-reasons .reason .img-for-icon .bg-for-icon, .reasons-to-use-app .container .list-reasons .reason .img-for-icon .container-for-icon {
-    height: 8vh !important;
-    width: 8vh !important;
-  }
-  .reasons-to-use-app .container .list-reasons .reason .title-for-icon {
+  .reasons-to-use-app .container .list-reasons .align-icon .title-for-icon {
     display: flex;
     flex-direction: column;
     margin-left: 2vh;
   }
-  .reasons-to-use-app .container .list-reasons .reason .title-for-icon h2 {
-    font-size: 3vh !important;
+  .reasons-to-use-app .container .list-reasons .align-icon .title-for-icon .secondary-title {
     margin-bottom: 1vh;
   }
-  .reasons-to-use-app .container .list-reasons .reason .title-for-icon p {
+  .reasons-to-use-app .container .list-reasons .align-icon .title-for-icon p {
     margin-bottom: 3vh;
   }
   .reasons-to-use-app .container .list-reasons .reason-2, .reasons-to-use-app .container .list-reasons .reason-5 {

@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/eleventh-page-img/man-walk.png) bottom right no-repeat;
     min-height: 420px;
+    background: url(../img/eleventh-page-img/man-walk.png) bottom right no-repeat;
     .container {
         display: flex;
         flex-flow: row nowrap;
@@ -16,7 +16,7 @@
         .main-content {
             width: 40vw;
             .title {
-                h1 {
+                .primary-title {
                     font-size: 48pt;
                 }
                 p {
@@ -38,11 +38,6 @@
             background-color: rgba(255,255,255,0.8);
             .main-content {
                 width: 90%;
-                .title {
-                    h1 {
-                        font-size: 5vh;
-                    }
-                }
                 .platforms {
                     img {
                         margin-top: 40px;
