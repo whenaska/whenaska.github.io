@@ -12,3 +12,5 @@
 [Поросёнок Пётр](https://whenaska.github.io/petr/src/ "Поросёнок Пётр")
 
 [Freebie](https://whenaska.github.io/freebie/ "freebie")
+
+[Чаевые](https://whenaska.github.io/tips/ "чаевые")
