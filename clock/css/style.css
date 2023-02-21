@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  align-items: center;
+  width: 80vw;
+  height: 100vh;
+}
+.container .hours, .container .minutes, .container .seconds {
+  max-width: 20vw;
+}
+.container .hours img, .container .minutes img, .container .seconds img {
+  width: 9vw;
+  height: auto;
+}
+.container .point {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vw;
+}
+.container .point img {
+  max-width: 4vw;
+}/*# sourceMappingURL=style.css.map */

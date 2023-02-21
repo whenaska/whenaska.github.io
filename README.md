@@ -13,4 +13,6 @@
 
 [Freebie](https://whenaska.github.io/freebie/ "freebie")
 
-[Чаевые](https://whenaska.github.io/tips/ "чаевые")
+[Чаевые](https://whenaska.github.io/tips/ "Чаевые")
+
+[Брутальные часы](https://whenaska.github.io/clock/ "Часы")
