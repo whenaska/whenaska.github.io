@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+}
+.container .menu-result {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 8vw;
+  width: calc(36.5vw - 10px);
+  margin-bottom: 2.5vh;
+  padding: 10px;
+  border: 4px solid #F2E5E5;
+  border-radius: 20px;
+  color: #2B3A55;
+  transition: all 0.2s;
+}
+.container .menu-result:hover {
+  background-color: #F2E5E5;
+}
+.container .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .buttons .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 22vw;
+  margin-right: 20px;
+}
+.container .buttons .numbers button {
+  user-select: none;
+  width: 7vw;
+  height: 7vw;
+  margin-bottom: 0.5vw;
+  color: #2B3A55;
+  background-color: white;
+  border: 4px solid #E8C4C4;
+  border-radius: 20px;
+  transition: all 0.2s;
+  font-weight: 700;
+  font-size: 30pt;
+}
+.container .buttons .numbers button:hover {
+  background-color: #E8C4C4;
+}
+.container .buttons .numbers button:active {
+  background-color: #ebb6b6;
+  border: 4px solid #ebb6b6;
+}
+.container .buttons .actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 14.5vw;
+}
+.container .buttons .actions button {
+  user-select: none;
+  width: 7vw;
+  height: 7vw;
+  margin-bottom: 0.5vw;
+  background-color: white;
+  color: #2B3A55;
+  border: 4px solid #CE7777;
+  border-radius: 20px;
+  transition: all 0.2s;
+  font-weight: 700;
+  font-size: 30pt;
+}
+.container .buttons .actions button:hover {
+  background-color: #CE7777;
+  color: white;
+}
+.container .buttons .actions button:active {
+  background-color: #cc6262;
+  border: 4px solid #cc6262;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    font-size: 20pt !important;
+  }
+  .container .menu-result {
+    height: 12vw !important;
+    width: calc(90vw - 10px) !important;
+  }
+  .container .buttons {
+    justify-content: space-between;
+    width: 90vw !important;
+  }
+  .container .buttons .numbers {
+    width: 52vw !important;
+    margin-right: 0 !important;
+  }
+  .container .buttons .numbers button {
+    font-size: 20pt !important;
+    width: 17vw !important;
+    height: 17vw !important;
+  }
+  .container .buttons .actions {
+    width: 34.5vw !important;
+  }
+  .container .buttons .actions button {
+    font-size: 20pt !important;
+    width: 17vw !important;
+    height: 17vw !important;
+  }
+}/*# sourceMappingURL=style.css.map */

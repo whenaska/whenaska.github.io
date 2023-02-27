@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-result">
+            <p id="result">Введите выражение</p>
+        </div>
+        <div class="buttons">
+            <div class="numbers">
+                <button id="number9" onclick="addNine()">9</button>
+                <button id="number8" onclick="addEight()">8</button>
+                <button id="number7" onclick="addSeven()">7</button>
+                <button id="number6" onclick="addSix()">6</button>
+                <button id="number5" onclick="addFive()">5</button>
+                <button id="number4" onclick="addFour()">4</button>
+                <button id="number3" onclick="addThree()">3</button>
+                <button id="number2" onclick="addTwo()">2</button>
+                <button id="number1" onclick="addOne()">1</button>
+                <button id="number0" onclick="addZero()">0</button>
+                <button id="point" onclick="addPoint()">.</button>
+            </div>
+    
+            <div class="actions">
+                <button id="delete-last-number" onclick="deleteLastNumber()">CE</button>
+                <button id="delete-all" onclick="deleteAllExpression()">C</button>
+                <button id="action-minus" onclick="addMinus()">-</button>
+                <button id="action-plus" onclick="addPlus()">+</button>
+                <button id="action-multi" onclick="addMulti()">*</button>
+                <button id="action-del" onclick="addDel()">/</button>
+                <button id="selete-last" onclick="deleteLastSymbol()">←</button>
+                <button id="action-equal" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/createStringFormula.js"></script>
+    <script src="js/checkActions.js"></script>
+    <script src="js/updateTextOnDisplay.js"></script>
+    <script src="js/calculateResult.js"></script>
+</body>
+</html>

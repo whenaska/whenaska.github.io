@@ -16,3 +16,5 @@
 [Чаевые](https://whenaska.github.io/tips/ "Чаевые")
 
 [Брутальные часы](https://whenaska.github.io/clock/ "Часы")
+
+[Черновой калькулятор своими ручками без всяких eval() и т.п.](https://whenaska.github.io/basicCalculator/ "Калькулятор")
