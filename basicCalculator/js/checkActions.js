@@ -11,6 +11,7 @@ function checkPlusMulDel() {
         cntPoint = 0;
     }
 }
+
 function checkMinus() {
     if ("+-*/0123456789".includes(unsortString[lengthUnsStr-1]) || lengthUnsStr < 2) {
         if (cntActs >= 2) {
@@ -23,6 +24,7 @@ function checkMinus() {
         }
     }
 }
+
 function checkPoint() {
     if ("0123456789".includes(unsortString[lengthUnsStr-1]) && cntPoint == 0) {
         unsortString += elementNow;

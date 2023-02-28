@@ -9,6 +9,14 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="attention">
+        <div class="sign" onclick="">
+            <p class="exclamationPoint">!</p>
+        </div>
+        <p class="text">В вычислениях могут быть ошибки, связанные с форматом чисел в js (IEEE 754). Подробнее можно узнать
+            <a href="https://habr.com/ru/post/541816/" target="_blank">здесь</a>
+        </p>
+    </div>
     <div class="container">
         <div class="menu-result">
             <p id="result">Введите выражение</p>
@@ -41,8 +49,10 @@
         </div>
     </div>
     <script src="js/createStringFormula.js"></script>
+    <script src="js/deleteItems.js"></script>
     <script src="js/checkActions.js"></script>
     <script src="js/updateTextOnDisplay.js"></script>
     <script src="js/calculateResult.js"></script>
+    <script src="js/makeClear.js"></script>
 </body>
 </html>

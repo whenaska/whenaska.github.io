@@ -1,10 +1,14 @@
-let arrForSmth = [];
+let arrForFormula = [];
+let indexOfArr = 0;
+let lastAction = "";
 let strForNumber = "";
-let strNumbers = "0123456789";
-let strActsDivMul = "*/";
-let j = 0;
+
 let countDivMul = 0;
 let result = 0;
+let copyResult = 0;
+
+let strNumbers = "0123456789";
+let strActsDivMul = "*/";
 
 function calculateResult() {
     unsortString += "=";
@@ -17,8 +21,8 @@ function calculateResult() {
             //проверка на следующее отрицательное число для упрощения распределения чисел (так легче отделить, например, в примере 23-5)
             if(unsortString[i+1] == "-") {
                 //добавление числа в массив
-                arrForSmth[j] = strForNumber;
-                j++;
+                arrForFormula[indexOfArr] = strForNumber;
+                indexOfArr++;
                 //обнуление для последующей проверки
                 strForNumber = "";
                 strForNumber += unsortString[i+1];
@@ -30,7 +34,7 @@ function calculateResult() {
         else {
             if(unsortString[i] == "-" ) {
                 //для корректного добавления первого отрицательного элемента и отрицательного элемента после умножения или деления
-                if(arrForSmth.length == 0 || strActsDivMul.includes(unsortString[i-1])){
+                if(arrForFormula.length == 0 || strActsDivMul.includes(unsortString[i-1])){
                     strForNumber += unsortString[i];
                     continue;
                 }
@@ -38,13 +42,13 @@ function calculateResult() {
             //если знак - плюс, умножить или делить
 
             //добавление получившегося числа из предыдущей проверки
-            arrForSmth[j] = strForNumber;
+            arrForFormula[indexOfArr] = strForNumber;
             strForNumber = "";
-            j++;
+            indexOfArr++;
 
             //добавление знака плюс, умножить или делить сразу в массив
-            arrForSmth[j] = unsortString[i];
-            j++;
+            arrForFormula[indexOfArr] = unsortString[i];
+            indexOfArr++;
 
             if(strActsDivMul.includes(unsortString[i], 0)) {
                 //cчётчик количества умножения и деления
@@ -53,25 +57,44 @@ function calculateResult() {
         }
         
     }
-
+    //поиск последнего действия в массиве (+, -, * или /)
+    let lengthArr = arrForFormula.length;
+    lastAction = "";
+    for(let indexOfArr = lengthArr - 1; indexOfArr >= 0; indexOfArr--){
+        if("*+/".includes(arrForFormula[indexOfArr]) || +arrForFormula[indexOfArr] < 0) {
+            if("*+/".includes(arrForFormula[indexOfArr])) {
+                lastAction += arrForFormula[indexOfArr];
+                lastAction += arrForFormula[indexOfArr+1];
+                break;
+            }
+            else if ("*+/".includes(arrForFormula[indexOfArr-1])) {
+                lastAction += arrForFormula[indexOfArr-1];
+                lastAction += arrForFormula[indexOfArr];
+                break;
+            }
+            else {
+                lastAction += arrForFormula[indexOfArr];
+                break;
+            }
+        }
+    }
     //создание массива без умножения и деления (предварительный подсчёт произведений и частных)
-    let lengthArr = arrForSmth.length;
     if (countDivMul != 0){
-        for(let j = 1; j < lengthArr - 1; j++){
+        for(let indexOfArr = 1; indexOfArr < lengthArr - 1; indexOfArr++){
             if (countDivMul > 0) {
-                if (strActsDivMul.includes(arrForSmth[j])) {
-                    if(arrForSmth[j] == "*"){
+                if (strActsDivMul.includes(arrForFormula[indexOfArr])) {
+                    if(arrForFormula[indexOfArr] == "*"){
                         //удаление и замена множителей на их произведение
-                        arrForSmth.splice(j-1, 3, arrForSmth[j-1]*arrForSmth[j+1]);
+                        arrForFormula.splice(indexOfArr-1, 3, arrForFormula[indexOfArr-1]*arrForFormula[indexOfArr+1]);
                         countDivMul --;
-                        j--;
+                        indexOfArr--;
                         lengthArr -= 2;
                     }
                     else {
                         //удаление и замена делимого и делителя на их частное
-                        arrForSmth.splice(j-1, 3, arrForSmth[j-1]/arrForSmth[j+1]);
+                        arrForFormula.splice(indexOfArr-1, 3, arrForFormula[indexOfArr-1]/arrForFormula[indexOfArr+1]);
                         countDivMul --;
-                        j--;
+                        indexOfArr--;
                         lengthArr -= 2;
                     }
                 }
@@ -79,17 +102,22 @@ function calculateResult() {
         }
     }
     //окончательные вычисления сумм и разностей
-    result += +arrForSmth[0];
+    result += +arrForFormula[0];
     for ( let i = 1; i < lengthArr - 1; i++) {
         //в получившемся массиве есть только сложение (знак +) и вычитание (сложение обычного числа и отрицательного числа)
-        if (arrForSmth[i] == "+") {
-            result += +arrForSmth[i+1];
+        if (arrForFormula[i] == "+") {
+            result += +arrForFormula[i+1];
             i++;
         }
         else {
-            result += +arrForSmth[i];
+            result += +arrForFormula[i];
         }
         
     }
-    alert(result);
+    copyResult = result;
+    displayFormula.innerHTML = result.toString();
+    clear();
+    unsortString = copyResult.toString();
+    unsortString += lastAction;
+    lengthUnsStr = unsortString.length;
 }

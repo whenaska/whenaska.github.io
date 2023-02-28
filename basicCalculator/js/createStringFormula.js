@@ -1,3 +1,8 @@
+let elementNow = "";
+let unsortString= "";
+let lengthUnsStr = unsortString.length;
+
+//numbers
 function addZero() {
     unsortString += "0";
     cntActs = 0;
@@ -54,6 +59,7 @@ function addPoint() {
     updateText();
 }
 
+//acts
 function addMinus() {
     elementNow = "-";
     checkMinus();
@@ -74,32 +80,3 @@ function addDel() {
     checkPlusMulDel();
     updateText();
 }
-function deleteLastNumber() {
-    let i = lengthUnsStr-1;
-    while( (! "+-*/".includes( unsortString[i] )) && lengthUnsStr > 0){
-        unsortString = unsortString.slice(0, lengthUnsStr-1);
-        lengthUnsStr = unsortString.length;
-        i--;
-    }
-    updateText();
-}
-function deleteAllExpression() {
-    unsortString= "";
-    lengthUnsStr = 0;
-    ntActs = 0;
-    cntPoint = 0;
-    arrForSmth = [];
-    j = 0;
-    countDivMul = 0;
-    result = 0;
-    updateText();
-}
-function deleteLastSymbol() {
-    unsortString = unsortString.slice(0, lengthUnsStr-1);
-    lengthUnsStr = unsortString.length;
-    updateText();
-}
-
-let elementNow = "";
-let unsortString= "";
-let lengthUnsStr = unsortString.length;
