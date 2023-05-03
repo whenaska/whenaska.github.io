@@ -3,56 +3,16 @@ let unsortString= "";
 let lengthUnsStr = unsortString.length;
 
 //numbers
-function addZero() {
-    unsortString += "0";
+document.querySelector(".numbers").addEventListener("click", function(event){
+    if(!strNumbers.includes(event.target.innerHTML)) return;
+
+    unsortString += `${event.target.innerHTML}`;
     cntActs = 0;
+    
     updateText();
-}
-function addOne() {
-    unsortString += "1";
-    cntActs = 0;
-    updateText();
-}
-function addTwo() {
-    unsortString += "2";
-    cntActs = 0;
-    updateText();
-}
-function addThree() {
-    unsortString += "3";
-    cntActs = 0;
-    updateText();
-}
-function addFour() {
-    unsortString += "4";
-    cntActs = 0;
-    updateText();
-}
-function addFive() {
-    unsortString += "5";
-    cntActs = 0;
-    updateText();
-}
-function addSix() {
-    unsortString += "6";
-    cntActs = 0;
-    updateText();
-}
-function addSeven() {
-    unsortString += "7";
-    cntActs = 0;
-    updateText();
-}
-function addEight() {
-    unsortString += "8";
-    cntActs = 0;
-    updateText();
-}
-function addNine() {
-    unsortString += "9";
-    cntActs = 0;
-    updateText();
-}
+});
+
+//point
 function addPoint() {
     elementNow = ".";
     checkPoint();
@@ -60,23 +20,28 @@ function addPoint() {
 }
 
 //acts
-function addMinus() {
-    elementNow = "-";
-    checkMinus();
+function addPlusMulDelMin(elem) {
+    elementNow = `${elem}`;
+
+    if(elementNow == "-") checkMinus();
+    else checkPlusMulDel();
+
     updateText();
 }
-function addPlus() {
-    elementNow = "+";
-    checkPlusMulDel();
-    updateText();
-}
-function addMulti() {
-    elementNow = "*";
-    checkPlusMulDel();
-    updateText();
-}
-function addDel() {
-    elementNow = "/";
-    checkPlusMulDel();
-    updateText();
-}
+
+document.querySelector(".actions").addEventListener("click", function(event){
+    if(event.target.tagName != "BUTTON") return;
+
+    let objOfAct = {
+        "CE": deleteLastNumber,
+        "C": deleteAllExpression,
+        "←": deleteLastSymbol,
+        "-": () => addPlusMulDelMin("-"),
+        "+": () => addPlusMulDelMin("+"),
+        "*": () => addPlusMulDelMin("*"),
+        "/": () => addPlusMulDelMin("/"),
+        "=": calculateResult,
+    };
+
+    objOfAct[event.target.innerHTML]();
+});

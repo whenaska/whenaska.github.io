@@ -47,7 +47,7 @@
         align-items: center;
 
         height: 8vw;
-        width: calc(36.5vw - 10px);
+        width: calc(37.5vw - 10px);
         margin-bottom: 2.5vh;
         padding: 10px;
 
@@ -55,6 +55,10 @@
         border-radius: 20px;
         color: #2B3A55;
         transition: all 0.2s;
+        #result {
+            overflow: auto;
+            overflow-y: hidden;
+        }
     }
     .menu-result:hover {
         background-color: #F2E5E5;
@@ -64,20 +68,20 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
         .numbers {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             align-content: space-between;
     
-            width: 22vw;
+            width: 22.5vw;
             margin-right: 20px;
             button {
                 user-select: none;
                 width: 7vw;
                 height: 7vw;
                 margin-bottom: 0.5vw;
+                margin-right: 0.5vw;
                 color: #2B3A55;
                 background-color: white;
                 border: 4px solid #E8C4C4;
@@ -100,13 +104,13 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            
-            width: 14.5vw;
+            width: 15vw;
             button {
                 user-select: none;
                 width: 7vw;
                 height: 7vw;
                 margin-bottom: 0.5vw;
+                margin-right: 0.5vw;
                 background-color: white;
                 color: #2B3A55;
                 border: 4px solid #CE7777;
@@ -153,7 +157,7 @@
             justify-content: space-between;
             width: 90vw !important;
             .numbers {
-                width: 52vw !important;
+                width: 52.5vw !important;
                 margin-right: 0 !important;
                 button{
                     font-size: 6vw !important;
@@ -162,7 +166,7 @@
                 }
             }
             .actions {
-                width: 34.5vw !important;
+                width: 35vw !important;
                 button {
                     font-size: 6vw !important;
                     width: 17vw !important;
