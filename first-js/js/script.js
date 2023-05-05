@@ -1,20 +1,9 @@
-let Popup_yes = document.getElementById("Popup_yes");
-let Popup_no = document.getElementById("Popup_no");
+document.querySelector(".buttons").addEventListener("click", function(event) {
+    if(event.target.tagName != "BUTTON") return;
 
-function F_check_yes() {
-    if(document.getElementById("Yes").click) {
-        Popup_yes.classList.add("Open");
-    }
-}
-function closePopup_yes() {
-    Popup_yes.classList.remove("Open");
-}
+    document.querySelector(`#Popup${event.target.id}`).classList.add("Open");
+});
 
-function F_check_no() {
-    if(document.getElementById("No").click) {
-        Popup_no.classList.add("Open");
-    }
-}
-function closePopup_no() {
-    Popup_no.classList.remove("Open");
-}
+function closePopup(event){
+    event.target.closest("div").classList.remove("Open");
+};

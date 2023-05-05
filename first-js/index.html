@@ -8,19 +8,22 @@
 </head>
 <body>
         <h1>Ты гей?</h1>
-        <button class="btn yes" id="Yes" type="submit" onclick="F_check_yes()">Да</button>
-        <button class="btn no" id="No" type="submit" onclick="F_check_no()">Нет</button>
-
-        <div class="popup Popup_yes" id="Popup_yes">
-            <img src="img/happy.jpg" alt="happy">
-            <h2>Ты гей</h2>
-            <button class="btn confirm" onclick="closePopup_yes()">Ок</button>
+        
+        <div class="buttons">
+            <button class="btn" id="Yes" type="submit">Да</button>
+            <button class="btn" id="No" type="submit">Нет</button>
         </div>
 
-        <div class="popup Popup_no " id="Popup_no">
+        <div class="popup" id="PopupYes">
+            <img src="img/happy.jpg" alt="happy">
+            <h2>Ты гей</h2>
+            <button class="btn confirm" onclick="closePopup(event)">Ок</button>
+        </div>
+
+        <div class="popup" id="PopupNo">
             <img src="img/angry.jpg" alt="angry">
             <h2>Ты врёшь</h2>
-            <button class="btn confirm" onclick="closePopup_no()">Ок</button>
+            <button class="btn confirm" onclick="closePopup(event)">Ок</button>
         </div>
     <script src="js/script.js"></script>
 </body>
