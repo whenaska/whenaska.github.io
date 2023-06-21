@@ -28,7 +28,8 @@
 ## Чего?
 #### [Поросёнок Пётр](https://whenaska.github.io/petr/src/ "Поросёнок Пётр")
 *Бесконечная анимация. Зачем-то*
-
+#### [Для работы](https://whenaska.github.io/forWork/ "обэд")
+*Бесконечная анимация. Зачем-то*
 ---
 
 ![Alt Text](https://psv4.userapi.com/c816621/u72262702/docs/b90fb36c31d4/ae5845d4df.gif?extra=83CfIfdWtl2I_Qg-1I8X7wFL9D9GWlUFC6pMetrbNV0sOkezb7qJuqVFbjhTgbYZ3Ea1GrfPMS0rwNOi6BG3X5Y0nd5VBhHRZLHHLIQCUOPTCTlFlCm8jT09nkEixtaE1Hyuvx35AGIk7hTxMwk1sqDMbnM)
