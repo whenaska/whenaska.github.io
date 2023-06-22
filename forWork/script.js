@@ -12,7 +12,12 @@ function check() {
     });
 
     for(let i = 1; i < arrOfTime.length; i++) {
-        if(arrOfTime[i] - arrOfTime[i-1] >= 0.3) {
+
+        let minuteMax = +((arrOfTime[i])[0] + (arrOfTime[i])[1])*60 + +((arrOfTime[i])[3] + (arrOfTime[i])[4]);
+        let minuteMin = +((arrOfTime[i-1])[0] + (arrOfTime[i-1])[1])*60 + +((arrOfTime[i-1])[3] + (arrOfTime[i-1])[4]);
+        
+        if( minuteMax - minuteMin >= 30){
+            console.log(minuteMax, minuteMin, minuteMax - minuteMin);
             arrForBreak[indBreak] = `${arrOfTime[i-1].replaceAll(".", ":")} - ${arrOfTime[i].replaceAll(".", ":")}`;
             indBreak++;
         }
