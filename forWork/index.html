@@ -8,13 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Введите время в формате: 10:35,12:01,11:22 и т.д.</p>
-    <textarea name="" id="" cols="30" rows="10" class="allTime"></textarea>
+    <p>Введите время в поле в формате "10:35", а затем нажмите "добавить".
+        <br> Если нажать кнопку "отправить", то вычислится время обеда и последовательность действий
+    </p>
+    <div class="input-box">
+        <textarea class="allTime"></textarea>
+        <div class="buttons-action">
+            <button type="submit" onclick="addButton()" class="button-action">Добавить</button>
+            <button type="submit" onclick="calculateTime()" class="button-action">Отправить</button>
+        </div>
+    </div>
     <br>
-    <button type="submit" onclick="check()">Отправить</button>
-    <br>
-    <p class="eat" hidden>Время для обеда:</p>
+    <div class="sequence">
 
+    </div>
+    <p class="eat" hidden>Время для обеда:</p>
+    <div class="forLunch">
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

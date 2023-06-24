@@ -1,36 +1,51 @@
-function check() {
-    let arrOfTime = [];
-    let arrForBreak = [];
-    let indBreak = 0;
-    let text = document.querySelector(".allTime").value;
+function addButton() {
+    if(document.querySelector(".eat").hidden == false) {
+        document.querySelector(".eat").hidden = true;
+        document.querySelector(".sequence").remove();
+        document.querySelector(".eat").insertAdjacentHTML("beforebegin", `<div class="sequence"></div>`);
 
-    text = text.replaceAll(":", ".")
-    arrOfTime = text.split(",");
+        document.querySelector(".forLunch").remove();
+        document.querySelector(".eat").insertAdjacentHTML("afterend", `<div class="forLunch"></div>`);
+    }
+    let textForButton = document.querySelector(".allTime").value;
+    document.querySelector(".input-box").insertAdjacentHTML("afterend", `<button class="btn-for-calcul">${textForButton}</button>`);
+    document.querySelector(".allTime").value = null;
+}
 
-    arrOfTime.sort(function(a, b) {
+function calculateTime() {
+    let allButton = document.querySelectorAll(".btn-for-calcul");
+    let arrOfTimeMinutes = [], indArrMinutes = 0;
+    for(elem of allButton) {
+        arrOfTimeMinutes[indArrMinutes] = +(elem.innerHTML.slice(0,2))*60 + +(elem.innerHTML.slice(3,5));
+        indArrMinutes++;
+    }
+    //сортировка времени
+    arrOfTimeMinutes.sort(function(a, b) {
         return a - b;
     });
+    //вывод отстортированного массива
+    for(let i = 0; i < arrOfTimeMinutes.length; i ++) {
+        let minutes ;
+        Math.trunc((arrOfTimeMinutes[i]%60) / 10) == 0 ? minutes = "0" + `${arrOfTimeMinutes[i]%60}` : minutes = `${arrOfTimeMinutes[i]%60}`;
+        document.querySelector(".sequence").insertAdjacentHTML("beforeend", `<span>${Math.trunc(arrOfTimeMinutes[i]/60)}:${minutes} => </span>`);
+    }
+    document.querySelector(".sequence").insertAdjacentHTML("beforeend", `<span>домой</span>`);
+    //считаем время для обеда
+    for(let i = arrOfTimeMinutes.length - 1; i >= 0; i --) {
 
-    for(let i = 1; i < arrOfTime.length; i++) {
+        allButton[i].remove();
+        if (i == 0) continue;
 
-        let minuteMax = +((arrOfTime[i])[0] + (arrOfTime[i])[1])*60 + +((arrOfTime[i])[3] + (arrOfTime[i])[4]);
-        let minuteMin = +((arrOfTime[i-1])[0] + (arrOfTime[i-1])[1])*60 + +((arrOfTime[i-1])[3] + (arrOfTime[i-1])[4]);
-        
-        if( minuteMax - minuteMin >= 30){
-            console.log(minuteMax, minuteMin, minuteMax - minuteMin);
-            arrForBreak[indBreak] = `${arrOfTime[i-1].replaceAll(".", ":")} - ${arrOfTime[i].replaceAll(".", ":")}`;
-            indBreak++;
+        document.querySelector(".eat").hidden = false;
+
+        if(arrOfTimeMinutes[i] - arrOfTimeMinutes[i-1] >= 30){
+            let minutesPre;
+            Math.trunc((arrOfTimeMinutes[i-1]%60) / 10) == 0 ? minutesPre = "0" + `${arrOfTimeMinutes[i-1]%60}` : minutesPre = `${arrOfTimeMinutes[i-1]%60}`;
+            let minutesNow;
+            Math.trunc((arrOfTimeMinutes[i]%60) / 10) == 0 ? minutesNow = "0" + `${arrOfTimeMinutes[i]%60}` : minutesNow = `${arrOfTimeMinutes[i]%60}`;
+
+            document.querySelector(".forLunch").insertAdjacentHTML("afterbegin", `<p>${Math.trunc(arrOfTimeMinutes[i-1]/60)}:${minutesPre} -  
+            ${Math.trunc(arrOfTimeMinutes[i]/60)}:${minutesNow}</p>`);
         }
     }
-
-    document.querySelector(".eat").hidden = false;
-
-    for(let i = arrForBreak.length - 1; i >= 0; i--) {
-        document.querySelector(".eat").insertAdjacentHTML("afterend", `<p>${arrForBreak[i]}<p/>`)
-    }
-
-    for(let i = 0; i < arrOfTime.length; i++) {
-        document.querySelector(".eat").insertAdjacentHTML("beforebegin", `<span>${arrOfTime[i].replace(".", ":")} => <span/>`)
-    }
-    document.querySelector(".eat").insertAdjacentHTML("beforebegin", `<span>домой<span/>`)
 }

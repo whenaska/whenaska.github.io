@@ -1,19 +1,32 @@
 html {
-    padding: 20px;
+    padding: 5vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 p, button, textarea, span {
     font-size: 14pt;
 }
+.input-box {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 textarea {
-    margin-top: 3vh;
-    width: 90vw;
-    height: 40vh;
+    width: 40vw;
+    height: 12vh;
+}
+.buttons-action {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.button-action {
+    width: 40vw;
 }
 button {
     padding: 10px 20px;
     margin-top: 1vh;
-    margin-bottom: 3vh;
     border-radius: 2000px;
 }
 .eat {
